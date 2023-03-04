@@ -139,7 +139,7 @@ nav a {
 .features img {
     padding-left: 10px;
     padding-top: 30px;
-    filter: invert(0.1) sepia(1);
+    filter:grayscale(100%);
 }
 
 
@@ -153,7 +153,6 @@ nav a {
 
 .recent {
     margin-left: 185px;
-    
 
 }
 
@@ -170,7 +169,6 @@ nav a {
 
     width: 330px;
     height: 440px;
-
     background-color: white;
 }
 
@@ -183,19 +181,6 @@ nav a {
     top: 15px;
 }
 
-.second {
-
-    width: 330px;
-    height: 240px;
-    top: 15px;
-}
-
-.third {
-
-    width: 330px;
-    height: 240px;
-    top: 15px;
-}
 
 #structure h4 {
     padding-left: 30px;
@@ -214,3 +199,192 @@ nav a {
     padding-bottom: 100px;
 
 }
+
+.black {
+
+    height: 500px;
+    width: 1300px;
+    background-color: #292E47;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 120px;
+
+}
+
+.coluna1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#faces {
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-right: 60px;
+}
+
+.blond {
+    width: 150px;
+    height: 150px;
+}
+
+#testimonials {
+    width: 800px;
+    height: 382px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+#testimonials h2 {
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.circle {
+    color: yellow;
+    margin: 100px auto;
+    font-size: 20px;
+}
+
+.profile {
+    width: 65px;
+    height: 65px;
+    border-radius: 80%;
+}
+
+.midle {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+.midle h5 {
+    margin-left: 10px;
+    color: rgb(44, 133, 133);
+    margin-bottom: 2px;
+}
+
+.midle p {
+
+    color: white;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-right: 25px;
+
+}
+
+.recent2{
+    margin-left: 185px;
+    margin-top: 150px;
+}
+
+.blueCircle{
+    background-color:#F4F6FC;
+    width: 80px;
+    height: 80px;   
+    border-radius: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+#structure2 img{
+    margin-top: 20px;
+    margin-left: 20px;
+   
+    
+}
+
+#structure2 h4 {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+#structure2 p {
+    padding-left: 30px;
+    color: rgb(66, 66, 66);
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+
+#structure2 a {
+    padding-left: 30px;
+    color: blue;
+    text-decoration: none;
+   
+
+}
+.container2{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 190px;
+    margin-top: 60px;
+}
+.recent-box2{
+    width: 330px;
+    height: 380px;
+    background-color: white;
+}
+
+#bigYellow{
+    height: 500px;
+    width: 1300px;
+    background-color: rgb(252, 208, 62);
+    display: flex;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.yellow-text {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+    color: rgb(66, 66, 66);
+    
+}
+
+.btn-sectionYell{
+margin-top: 80px;
+display: flex;
+
+}
+
+.yellow-text h2{
+    font-size: 40px;
+}
+.yellow-text p{
+    font-size: 15px;
+}
+
+input {
+    padding-left: 10px;
+    background-color: white;
+    font-size: 16px;
+    border: none;
+    height: 60px;
+    width: 350px;
+  }
+  button{
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 60px;
+    width: 200px;
+    margin-left: 10px;
+
+  }
+ .mail-card{
+    background-color: white
+    
+ }
+  .mail{
+    margin-top: 15px;  
+    margin-left: 15px;
+
+  }
