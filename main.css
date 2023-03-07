@@ -139,7 +139,7 @@ nav a {
 .features img {
     padding-left: 10px;
     padding-top: 30px;
-    filter:grayscale(100%);
+    filter: grayscale(100%);
 }
 
 
@@ -277,25 +277,26 @@ nav a {
 
 }
 
-.recent2{
+.recent2 {
     margin-left: 185px;
     margin-top: 150px;
 }
 
-.blueCircle{
-    background-color:#F4F6FC;
+.blueCircle {
+    background-color: #F4F6FC;
     width: 80px;
-    height: 80px;   
+    height: 80px;
     border-radius: 100%;
     margin-top: 30px;
     margin-left: 30px;
-    
+
 }
-#structure2 img{
+
+#structure2 img {
     margin-top: 20px;
     margin-left: 20px;
-   
-    
+
+
 }
 
 #structure2 h4 {
@@ -316,23 +317,25 @@ nav a {
     padding-left: 30px;
     color: blue;
     text-decoration: none;
-   
+
 
 }
-.container2{
+
+.container2 {
     display: flex;
     position: relative;
     justify-content: space-between;
     padding: 0 190px;
     margin-top: 60px;
 }
-.recent-box2{
+
+.recent-box2 {
     width: 330px;
     height: 380px;
     background-color: white;
 }
 
-#bigYellow{
+#bigYellow {
     height: 500px;
     width: 1300px;
     background-color: rgb(252, 208, 62);
@@ -346,19 +349,20 @@ nav a {
     margin: auto;
     padding-bottom: 50px;
     color: rgb(66, 66, 66);
-    
-}
-
-.btn-sectionYell{
-margin-top: 80px;
-display: flex;
 
 }
 
-.yellow-text h2{
+.btn-sectionYell {
+    margin-top: 80px;
+    display: flex;
+
+}
+
+.yellow-text h2 {
     font-size: 40px;
 }
-.yellow-text p{
+
+.yellow-text p {
     font-size: 15px;
 }
 
@@ -369,8 +373,9 @@ input {
     border: none;
     height: 60px;
     width: 350px;
-  }
-  button{
+}
+
+button {
     background-color: blue;
     color: white;
     border: none;
@@ -378,13 +383,60 @@ input {
     width: 200px;
     margin-left: 10px;
 
-  }
- .mail-card{
+}
+
+.mail-card {
     background-color: white
-    
- }
-  .mail{
-    margin-top: 15px;  
+}
+
+.mail {
+    margin-top: 15px;
     margin-left: 15px;
 
-  }
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+
+.footer-circle {
+    margin: auto;
+    display: block;
+    width: 300px;
+    margin-left: 200px;
+}
+
+.footer-circle img {
+    padding-top: 30px;
+    width: 100px;
+}
+
+.footer-circle p {
+    padding-top: 20px;
+    font-size: 15px;
+    color: rgb(66, 66, 66);
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.first-column {
+    width: 120px;
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(66, 66, 66);
+
+}
+
+.first-column p{
+    margin-top: 40px;
+}
