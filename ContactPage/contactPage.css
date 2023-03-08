@@ -1,0 +1,181 @@
+body {
+   
+    background: #F4F6FC;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.start {
+    padding: 0 170px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: baseline;
+}
+
+nav {
+    width: 300px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex:5 1 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    flex:1 1 auto;
+}
+
+.link-btn {
+    display: block;
+    width: 90px;
+    margin: 40px auto 0 auto;
+    padding: 08px 20px;
+    flex:5 1 auto;
+
+    background-color: blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+section {
+    height: 700px;
+    width: 1150px;
+    display: flex;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.container-text h1 {
+    margin: auto;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.container-inputs {
+    margin-top: 90px;
+
+}
+
+input {
+    background-color: rgb(224, 236, 240);
+    color: rgb(66, 66, 66);
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+button {
+    margin-top: 90px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 70px;
+}
+
+#form-container {
+    width: 100%;
+}
+
+#comment {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 200px;
+    width: 1150px;
+    background-color: rgb(224, 236, 240);
+    border: none;
+    margin-right: 10px;
+
+}
+
+.container-inputs p {
+    color: rgb(66, 66, 66);
+    
+}
+
+.typeContact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.typeContact input {
+    width: 500px;
+}
+
+#name{
+    padding-left: 10px;
+}
+#email{
+    padding-left: 10px;
+}
+#phone{
+    padding-left: 10px;
+}
+#message{
+    padding-left: 10px;
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+
+.footer-circle {
+    margin: auto;
+    display: block;
+    width: 300px;
+    margin-left: 200px;
+}
+
+.footer-circle img {
+    padding-top: 30px;
+    width: 100px;
+}
+
+.footer-circle p {
+    padding-top: 20px;
+    font-size: 15px;
+    color: rgb(66, 66, 66);
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.first-column {
+    width: 120px;
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(66, 66, 66);
+
+}
+
+.first-column p{
+    margin-top: 40px;
+}

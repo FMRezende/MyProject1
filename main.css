@@ -5,10 +5,16 @@ body {
     background: #F4F6FC;
 }
 
+.padre{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
 .start {
     padding: 0 170px;
     display: flex;
     justify-content: space-between;
+    flex-flow: row nowrap;
     align-items: baseline;
 }
 
@@ -20,11 +26,13 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex:5 1 auto;
 }
 
 nav a {
     text-decoration: none;
     color: rgb(66, 66, 66);
+    flex:1 1 auto;
 }
 
 .link-btn {
@@ -32,6 +40,7 @@ nav a {
     width: 90px;
     margin: 40px auto 0 auto;
     padding: 08px 20px;
+    flex:5 1 auto;
 
     background-color: blue;
     color: white;
@@ -44,9 +53,7 @@ nav a {
 
 #start-2 {
     display: flex;
-    top: 150px;
-
-}
+   }
 
 .container-text {
     display: flex;
@@ -62,6 +69,7 @@ nav a {
     font-size: 55px;
     font-weight: bold;
     padding-top: 05px;
+    display: flex;
 }
 
 #start-2 article {
@@ -114,19 +122,19 @@ nav a {
 }
 
 .projectOk {
-
     display: flex;
     width: 390px;
     height: 416px;
     margin-left: 30px;
     margin-top: 400px;
-
-
 }
 
 #section-3 img {
     height: 32px;
     margin-top: 80px;
+    padding-left: 10px;
+    padding-top: 30px;
+    filter: grayscale(100%);
 }
 
 .features {
@@ -136,28 +144,15 @@ nav a {
 
 }
 
-.features img {
-    padding-left: 10px;
-    padding-top: 30px;
-    filter: grayscale(100%);
-}
-
-
 #section-4 h2 {
-
     font-size: 40px;
     line-height: 47px;
     padding-top: 80px;
     color: #292E47;
-}
-
-.recent {
     margin-left: 185px;
-
 }
 
 .container {
-
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -172,10 +167,7 @@ nav a {
     background-color: white;
 }
 
-
-
 .first {
-
     width: 330px;
     height: 240px;
     top: 15px;
@@ -440,3 +432,78 @@ footer {
 .first-column p{
     margin-top: 40px;
 }
+
+/*@media all and (max-width: 990px){
+  
+    .start li{
+        font-size: 15px;
+    }
+    #start-2{
+        height: 600px;
+    
+    }
+    #start-2 h1 {
+        font-size: 30px;        
+    }
+    #start-2 article {
+        font-size: 15px;
+    }
+    .btn-section{
+        width:180px;
+        margin-right:10px;
+    }
+   
+    #start-2 a {
+        font-size: 10px;    
+        padding: 10px;
+    }
+    .container-man {
+
+        padding-top: 180px;
+        height: 300px;
+        
+    }
+    .man {
+        width: 350px;
+        height: 350px;
+        margin-left: 10px;
+    }
+    .blueCard {
+        width: 170px;
+        height: 230px;
+        margin-left: -330px;
+        margin-top: -50px;
+    }
+    .projectOk {
+        width: 170px;
+        height: 230px;
+        margin-top: 220px;
+        margin-right: 150px;
+    }
+    #section-3{
+        display: flex;
+        justify-content: center;
+                
+    }
+    #section-3 img {
+        height: 25px;
+        width: 90px;
+        padding-left: ;
+        justify-content: space-between;
+        
+        }
+    #section-4 h2 {
+        font-size: 30px;
+        padding-top: 50px;  
+    }
+    .recent-box {
+        width: 200px;
+        height: 300px;
+        background-color: white;
+    }
+    .first {
+        width: 200px;
+        height: 150px;
+        top: 15px;
+    }
+    }*/
