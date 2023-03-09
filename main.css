@@ -5,13 +5,21 @@ body {
     background: #F4F6FC;
 }
 
-.padre{
-    display:flex;
+body header, section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+body section, footer {
+    margin-top: 130px;
+}
+
+.padre {
+    display: flex;
     flex-flow: column nowrap;
 }
 
-.start {
-    padding: 0 170px;
+header {
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
@@ -22,17 +30,15 @@ nav {
     width: 300px;
 }
 
-nav ul {
+header nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    flex:5 1 auto;
 }
 
 nav a {
     text-decoration: none;
     color: rgb(66, 66, 66);
-    flex:1 1 auto;
 }
 
 .link-btn {
@@ -40,8 +46,7 @@ nav a {
     width: 90px;
     margin: 40px auto 0 auto;
     padding: 08px 20px;
-    flex:5 1 auto;
-
+    flex: 5 1 auto;
     background-color: blue;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -53,15 +58,12 @@ nav a {
 
 #start-2 {
     display: flex;
-   }
+    justify-content: space-between;
+}
 
 .container-text {
     display: flex;
     flex-direction: column;
-    height: 600px;
-    width: 500px;
-    margin-left: 180px;
-    padding-top: 200px;
 }
 
 #start-2 h1 {
@@ -86,12 +88,28 @@ nav a {
 }
 
 .container-man {
-
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding-top: 130px;
+
+    width: 600px;
     height: 600px;
-    width: 500px;
+
+    background-image: url("assets/hero-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.container-man img {
+    width: 270px;
+    height: 270px;
+    align-self: flex-start;
+}
+
+.container-man img:last-of-type {
+    padding-top: 176px;
+    align-self: flex-end;
 }
 
 #blue-btn {
@@ -105,69 +123,31 @@ nav a {
     color: rgb(66, 66, 66);
 }
 
-.man {
-
-    width: 600px;
-    height: 600px;
-    margin-left: 40px;
-
-}
-
-.blueCard {
+#section-3 {
     display: flex;
-    width: 390px;
-    height: 416px;
-    margin-left: -680px;
-    margin-top: -50px;
-}
-
-.projectOk {
-    display: flex;
-    width: 390px;
-    height: 416px;
-    margin-left: 30px;
-    margin-top: 400px;
+    justify-content: space-between;
 }
 
 #section-3 img {
     height: 32px;
-    margin-top: 80px;
+    margin-top: 20px;
     padding-left: 10px;
-    padding-top: 30px;
     filter: grayscale(100%);
-}
-
-.features {
-    padding: 30px 200px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-#section-4 h2 {
-    font-size: 40px;
-    line-height: 47px;
-    padding-top: 80px;
-    color: #292E47;
-    margin-left: 185px;
 }
 
 .container {
     display: flex;
     position: relative;
     justify-content: space-between;
-    padding: 0 190px;
-
 }
 
 .recent-box {
-
     width: 330px;
     height: 440px;
     background-color: white;
 }
 
-.first {
+.boxes {
     width: 330px;
     height: 240px;
     top: 15px;
@@ -189,26 +169,20 @@ nav a {
     color: blue;
     text-decoration: none;
     padding-bottom: 100px;
-
 }
 
 .black {
-
-    height: 500px;
-    width: 1300px;
+    max-width: 1320px;
+    height: 622px;
     background-color: #292E47;
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    margin-top: 120px;
-
 }
 
 .coluna1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 #faces {
@@ -217,15 +191,14 @@ nav a {
     margin-right: 60px;
 }
 
-.blond {
+.smilles {
     width: 150px;
     height: 150px;
 }
 
 #testimonials {
-    width: 800px;
-    height: 382px;
     text-align: center;
+    margin: auto;
     margin-top: 90px;
 }
 
@@ -233,6 +206,8 @@ nav a {
     color: white;
     font-size: 40px;
     margin-top: 10px;
+    text-align: center;
+    margin: auto;
 }
 
 .circle {
@@ -251,7 +226,6 @@ nav a {
     display: flex;
     justify-content: center;
     margin-top: 80px;
-
 }
 
 .midle h5 {
@@ -261,17 +235,30 @@ nav a {
 }
 
 .midle p {
-
     color: white;
     font-size: 10px;
     margin-top: 5px;
     margin-right: 25px;
-
 }
 
-.recent2 {
-    margin-left: 185px;
-    margin-top: 150px;
+section h2 {
+    font-size: 40px;
+    line-height: 47px;
+    color: #292E47;
+    margin: 0;
+    margin-bottom: 23px;
+}
+
+.container2 {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.recent-box2 {
+    width: 300px;
+    height: 380px;
+    background-color: white;
 }
 
 .blueCircle {
@@ -281,14 +268,11 @@ nav a {
     border-radius: 100%;
     margin-top: 30px;
     margin-left: 30px;
-
 }
 
 #structure2 img {
     margin-top: 20px;
     margin-left: 20px;
-
-
 }
 
 #structure2 h4 {
@@ -309,49 +293,37 @@ nav a {
     padding-left: 30px;
     color: blue;
     text-decoration: none;
-
-
-}
-
-.container2 {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    padding: 0 190px;
-    margin-top: 60px;
-}
-
-.recent-box2 {
-    width: 330px;
-    height: 380px;
-    background-color: white;
 }
 
 #bigYellow {
+    max-width: 1320px;
     height: 500px;
-    width: 1300px;
     background-color: rgb(252, 208, 62);
     display: flex;
-    margin: auto;
-    margin-top: 120px;
-}
-
-.yellow-text {
-    text-align: center;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-bottom: 50px;
     color: rgb(66, 66, 66);
-
 }
 
 .btn-sectionYell {
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
+}
 
+.btn-sectionYell button {
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 60px;
+    width: 200px;
+    margin-left: 20px;
 }
 
 .yellow-text h2 {
     font-size: 40px;
+    margin: auto;
 }
 
 .yellow-text p {
@@ -367,16 +339,6 @@ input {
     width: 350px;
 }
 
-button {
-    background-color: blue;
-    color: white;
-    border: none;
-    height: 60px;
-    width: 200px;
-    margin-left: 10px;
-
-}
-
 .mail-card {
     background-color: white
 }
@@ -384,7 +346,6 @@ button {
 .mail {
     margin-top: 15px;
     margin-left: 15px;
-
 }
 
 footer {
@@ -392,7 +353,6 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 70px;
-
 }
 
 .footer-circle {
@@ -426,84 +386,120 @@ footer {
     flex-direction: column;
     justify-content: center;
     color: rgb(66, 66, 66);
-
 }
 
-.first-column p{
+.first-column p {
     margin-top: 40px;
 }
 
-/*@media all and (max-width: 990px){
-  
-    .start li{
-        font-size: 15px;
-    }
-    #start-2{
-        height: 600px;
-    
-    }
+@media screen and (min-width: 768px ) and (max-width:1023px) {
+
+
     #start-2 h1 {
-        font-size: 30px;        
+        font-size: 30px;
     }
+
     #start-2 article {
         font-size: 15px;
     }
-    .btn-section{
-        width:180px;
-        margin-right:10px;
-    }
-   
+
     #start-2 a {
-        font-size: 10px;    
+        font-size: 10px;
         padding: 10px;
     }
-    .container-man {
 
+    .container-man {
         padding-top: 180px;
-        height: 300px;
-        
+        height: 500px;
+        margin-left: 60px;
     }
+
     .man {
-        width: 350px;
-        height: 350px;
-        margin-left: 10px;
+        width: 400px;
+        height: 400px;
     }
+
     .blueCard {
         width: 170px;
         height: 230px;
-        margin-left: -330px;
-        margin-top: -50px;
+        margin-left: -380px;
+        margin-top: -20px;
     }
+
     .projectOk {
         width: 170px;
         height: 230px;
-        margin-top: 220px;
+        margin-top: 250px;
         margin-right: 150px;
     }
-    #section-3{
+
+    #section-3 {
         display: flex;
-        justify-content: center;
-                
-    }
-    #section-3 img {
-        height: 25px;
-        width: 90px;
-        padding-left: ;
         justify-content: space-between;
-        
-        }
+    }
+
+    #section-3 img {
+        width: 100px;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     #section-4 h2 {
         font-size: 30px;
-        padding-top: 50px;  
+        margin-top: 100px;
     }
+
     .recent-box {
-        width: 200px;
-        height: 300px;
+        width: 210px;
+        height: 330px;
         background-color: white;
     }
-    .first {
-        width: 200px;
+
+    .boxes {
+        width: 210px;
         height: 150px;
         top: 15px;
     }
-    }*/
+
+    .black {
+        height: 400px;
+        width: 900px;
+    }
+
+    .smilles {
+        width: 120px;
+        height: 120px;
+    }
+
+    #testimonials {
+        margin-top: 50px;
+    }
+
+    #testimonials h2 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .circle {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .midle h5 {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    .midle p {
+        font-size: 8px;
+        margin-left: 12px;
+    }
+
+}
+    
