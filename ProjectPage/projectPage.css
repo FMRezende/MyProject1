@@ -5,10 +5,16 @@ body {
     background: #F4F6FC;
 }
 
+.padre{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
 .start {
     padding: 0 170px;
     display: flex;
     justify-content: space-between;
+    flex-flow: row nowrap;
     align-items: baseline;
 }
 
@@ -16,7 +22,7 @@ nav {
     width: 300px;
 }
 
-nav ul {
+.start nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -24,7 +30,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: rgb(66, 66, 66);
+    color: rgb(66, 66, 66);   
 }
 
 .link-btn {
@@ -32,6 +38,7 @@ nav a {
     width: 90px;
     margin: 40px auto 0 auto;
     padding: 08px 20px;
+    flex:5 1 auto;
 
     background-color: blue;
     color: white;
@@ -41,7 +48,6 @@ nav a {
     text-align: center;
     text-decoration: none;
 }
-
 
 .container-text {
     margin-left: 180px;
@@ -176,10 +182,12 @@ nav a {
 
 .yellow-text h2 {
     font-size: 40px;
+    margin: auto;
 }
 
 .yellow-text p {
     font-size: 15px;
+    
 }
 
 input {
@@ -210,7 +218,6 @@ button {
     margin-left: 15px;
 
 }
-
 footer {
     height: 300px;
     display: flex;
