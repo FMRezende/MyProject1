@@ -54,19 +54,20 @@ nav a {
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
+    
 }
 
-#start-2 {
+#principal {
     display: flex;
     justify-content: space-between;
 }
 
-.container-text {
+.principalContainerText {
     display: flex;
     flex-direction: column;
 }
 
-#start-2 h1 {
+#principal h1 {
     padding: 5px 0;
     font-size: 55px;
     font-weight: bold;
@@ -74,20 +75,20 @@ nav a {
     display: flex;
 }
 
-#start-2 article {
+#principal article {
     font-size: 20px;
     padding-bottom: 50px;
     color: rgb(66, 66, 66);
 }
 
-#start-2 a {
+#principal a {
     padding: 15px 30px;
     font-size: 15px;
     text-decoration: none;
     text-align: center;
 }
 
-.container-man {
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,13 +102,13 @@ nav a {
     background-size: contain;
 }
 
-.container-man img {
+.hero img {
     width: 270px;
     height: 270px;
     align-self: flex-start;
 }
 
-.container-man img:last-of-type {
+.hero img:last-of-type {
     padding-top: 176px;
     align-self: flex-end;
 }
@@ -123,55 +124,55 @@ nav a {
     color: rgb(66, 66, 66);
 }
 
-#section-3 {
+#client {
     display: flex;
     justify-content: space-between;
 }
 
-#section-3 img {
+#client img {
     height: 32px;
     margin-top: 20px;
     padding-left: 10px;
     filter: grayscale(100%);
 }
 
-.container {
+.containerProject {
     display: flex;
     position: relative;
     justify-content: space-between;
 }
 
-.recent-box {
+.box {
     width: 330px;
     height: 440px;
     background-color: white;
 }
 
-.boxes {
+.box-img {
     width: 330px;
     height: 240px;
     top: 15px;
 }
 
 
-#structure h4 {
+#structureProject h4 {
     padding-left: 30px;
 }
 
-#structure p {
+#structureProject p {
     padding-left: 30px;
     color: rgb(66, 66, 66);
     padding-bottom: 40px;
 }
 
-#structure a {
+#structureProject a {
     padding-left: 30px;
     color: blue;
     text-decoration: none;
     padding-bottom: 100px;
 }
 
-.black {
+.black-box {
     max-width: 1320px;
     height: 622px;
     background-color: #292E47;
@@ -179,7 +180,7 @@ nav a {
     justify-content: space-between;
 }
 
-.coluna1 {
+.faces-colun {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -249,13 +250,14 @@ section h2 {
     margin-bottom: 23px;
 }
 
-.container2 {
+.services-container {
     display: flex;
     position: relative;
     justify-content: space-between;
+    
 }
 
-.recent-box2 {
+.card-services{
     width: 300px;
     height: 380px;
     background-color: white;
@@ -270,26 +272,26 @@ section h2 {
     margin-left: 30px;
 }
 
-#structure2 img {
+#services img {
     margin-top: 20px;
     margin-left: 20px;
 }
 
-#structure2 h4 {
+#services h4 {
     padding-top: 10px;
     padding-left: 30px;
     padding-bottom: 30px;
     font-size: 20px;
 }
 
-#structure2 p {
+#services p {
     padding-left: 30px;
     color: rgb(66, 66, 66);
     padding-bottom: 30px;
     font-size: 15px;
 }
 
-#structure2 a {
+#services a {
     padding-left: 30px;
     color: blue;
     text-decoration: none;
@@ -392,10 +394,317 @@ footer {
     margin-top: 40px;
 }
 
-@media screen and (min-width: 768px ) and (max-width:1023px) {
+@media screen and (min-width: 998px ) and (max-width:1023px) {
+
+    header {
+        justify-content:space-around;
+    }
+    #principal {
+        display: flex;
+        justify-content: center     
+    }
+    .principalContainerText{
+        padding-top: 30px;
+    }
+    
+    #principal h1 {
+        font-size: 40px;
+    }
+    
+    #principal article {
+        font-size: 10px;
+    }
+    
+    #principal a {
+        font-size: 10px;
+    }
+    
+    .hero {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .hero img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero img:last-of-type {
+        padding-top: 120px;
+    }
+
+    #client {
+        justify-content: space-around;
+    }
+    
+    #client img {
+        height: 28px;
+        padding-left: 20px;
+        padding-right: 20px;  
+    }
+
+    section h2 {
+        font-size: 30px;
+        padding-left: 40px;  
+    }
+    
+    .containerProject {
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-right: 20px;  
+    }
+    
+    .box {
+        width: 280px;
+        height: 400px;
+        background-color: white;
+    }
+    
+    .box-img {
+        width: 280px;
+        height: 220px;
+        top: 15px;
+    }
+
+    #structureProject h4 {
+        padding-left: 10px;
+        font-size: 20px;    
+    }
+    
+    #structureProject p {
+        padding-left: 10px;
+        font-size: 15px;   
+    }
+    
+    #structureProject a {
+        padding-left: 10px;
+    }
+
+    .services-container {
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-right: 20px;    
+    }
+    
+    .card-services{
+        width: 280px;
+        height: 360px;
+    }   
+    
+    #services img {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    #services h4 {
+       font-size: 20px;
+    }
+    
+    #services p {
+        font-size: 15px;
+    }
+
+    
+    .footer-circle {
+        margin: auto;
+        display: block;
+        width: 300px;
+    }
+    
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+    
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 15px;
+        color: rgb(66, 66, 66);
+    }
+    
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 778px ) and (max-width:998px){
+    header {
+        justify-content:space-around;
+    }
+    #principal {
+        display: flex;
+        justify-content: center     
+    }
+    .principalContainerText{
+        padding-top: 30px;
+    }
+    
+    #principal h1 {
+        font-size: 30px;
+    }
+    
+    #principal article {
+        font-size: 10px;
+    }
+    
+    #principal a {
+        font-size: 10px;
+    }
+    
+    .hero {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .hero img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .hero img:last-of-type {
+        padding-top: 130px;
+    }
+
+    #client {
+        justify-content: space-around;
+    }
+    
+    #client img {
+        height: 28px;
+        padding-left: 20px;
+        padding-right: 20px;  
+    }
+
+    section h2 {
+        font-size: 25px;
+        padding-left: 40px;  
+    }
+    
+    .containerProject {
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 30px;  
+    }
+    
+    .box {
+        width: 220px;
+        height: 390px;
+        background-color: white;
+    }
+    
+    .box-img {
+        width: 220px;
+        height: 240px;
+        top: 15px;
+    }
+
+    #structureProject h4 {
+        padding-left: 10px;
+        font-size: 15px;    
+    }
+    
+    #structureProject p {
+        padding-left: 10px;
+        font-size: 13px;   
+    }
+    
+    #structureProject a {
+        padding-left: 10px;
+    }
+
+    .black-box {
+        height: 500px;   
+    }
+    
+    .smilles {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #testimonials h2 {
+        font-size: 25px;
+        padding-left: 0px; 
+        padding-top: 0px;  
+    }
+    
+    .circle {
+        font-size: 10px;
+    }
+    
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .midle h5 {
+        margin-top: 10px;
+    }
+
+    .services-container {
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 30px;    
+    }
+    
+    .card-services{
+        width: 220px;
+        height: 320px;
+    }   
+    
+    #services img {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    #services h4 {
+       font-size: 15px;
+       padding-left: 5px;
+    }
+    
+    #services p {
+        font-size: 13px;
+        padding-left: 5px;
+    }
+
+    #services a{
+        padding-left: 5px;
+    }
+
+    footer{
+        text-align: center;
+    }
+        
+    .footer-circle {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+    }
+    
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+    
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 13px;
+        color: rgb(66, 66, 66);
+    }
+    
+    .footer-columns {
+        margin-top: 70px;
+    }
+    .first-column p{
+        font-size: 13px;
+    }
+   
+    
+}
 
 
-    #start-2 h1 {
+    /*#start-2 h1 {
         font-size: 30px;
     }
 
@@ -501,5 +810,5 @@ footer {
         margin-left: 12px;
     }
 
-}
+}*/
     
