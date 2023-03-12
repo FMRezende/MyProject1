@@ -5,7 +5,7 @@ body {
     background: #F4F6FC;
 }
 
-body header, section {
+body header, section, .navigation {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -54,7 +54,10 @@ nav a {
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
-    
+}
+
+.navigation{ 
+    display: none;
 }
 
 #principal {
@@ -69,7 +72,7 @@ nav a {
 
 #principal h1 {
     padding: 5px 0;
-    font-size: 55px;
+    font-size: 60px;
     font-weight: bold;
     padding-top: 05px;
     display: flex;
@@ -143,13 +146,13 @@ nav a {
 }
 
 .box {
-    width: 330px;
-    height: 440px;
+    width: 340px;
+    height: 444px;
     background-color: white;
 }
 
 .box-img {
-    width: 330px;
+    width: 340px;
     height: 240px;
     top: 15px;
 }
@@ -157,12 +160,14 @@ nav a {
 
 #structureProject h4 {
     padding-left: 30px;
+    font-size: 24px;
 }
 
 #structureProject p {
     padding-left: 30px;
     color: rgb(66, 66, 66);
     padding-bottom: 40px;
+    font-size: 17px;
 }
 
 #structureProject a {
@@ -170,6 +175,7 @@ nav a {
     color: blue;
     text-decoration: none;
     padding-bottom: 100px;
+    font-size: 17px;
 }
 
 .black-box {
@@ -258,8 +264,8 @@ section h2 {
 }
 
 .card-services{
-    width: 300px;
-    height: 380px;
+    width: 340px;
+    height: 400px;
     background-color: white;
 }
 
@@ -281,20 +287,21 @@ section h2 {
     padding-top: 10px;
     padding-left: 30px;
     padding-bottom: 30px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #services p {
     padding-left: 30px;
     color: rgb(66, 66, 66);
     padding-bottom: 30px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #services a {
     padding-left: 30px;
     color: blue;
     text-decoration: none;
+    font-size: 17px;
 }
 
 #bigYellow {
@@ -394,10 +401,14 @@ footer {
     margin-top: 40px;
 }
 
-@media screen and (min-width: 998px ) and (max-width:1023px) {
+@media screen and (min-width: 998px ) and (max-width:1145px) {
 
     header {
         justify-content:space-around;
+    }
+
+    .navigation{ 
+        display: none;
     }
     #principal {
         display: flex;
@@ -529,9 +540,13 @@ footer {
     }
 }
 
-@media screen and (min-width: 778px ) and (max-width:998px){
+@media screen and (min-width: 777px ) and (max-width:998px){
     header {
         justify-content:space-around;
+    }
+
+    .navigation{
+        display: none;
     }
     #principal {
         display: flex;
@@ -596,7 +611,7 @@ footer {
     
     .box-img {
         width: 220px;
-        height: 240px;
+        height: 230px;
         top: 15px;
     }
 
@@ -700,115 +715,248 @@ footer {
         font-size: 13px;
     }
    
-    
 }
+@media screen and  (max-width:776px){
 
-
-    /*#start-2 h1 {
-        font-size: 30px;
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        gap: 150px;
+    }
+    header nav{        
+        display: none;
+    }
+    .link-btn {
+        display: block;
+        width: 50px;
+        margin: 40px auto 0 auto;
+        padding: 08px 10px;
+        font-size: 8px;
+        
     }
 
-    #start-2 article {
+    .navigation {
+        margin-top: 10px;
+        width: 300px;   
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+    }
+    
+    #principal {
+        display: flex;   
+        flex-direction: column;
+        margin-top: 25px;
+        
+    }
+    .principalContainerText{
+        padding-top: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    #principal h1 {
+        font-size: 50px;
+        justify-content: center;
+     
+    }
+    
+    #principal article {
         font-size: 15px;
     }
-
-    #start-2 a {
+    
+    #principal a {
         font-size: 10px;
-        padding: 10px;
     }
-
-    .container-man {
-        padding-top: 180px;
-        height: 500px;
-        margin-left: 60px;
-    }
-
-    .man {
+    
+    .hero {
         width: 400px;
         height: 400px;
+        margin-top: 50px;
+        margin:100px auto;
+    }
+    
+    .hero img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .hero img:last-of-type {
+        padding-top: 130px;
     }
 
-    .blueCard {
-        width: 170px;
-        height: 230px;
-        margin-left: -380px;
-        margin-top: -20px;
+    #client {
+        justify-content: space-around;
+        margin: auto;
     }
-
-    .projectOk {
-        width: 170px;
-        height: 230px;
-        margin-top: 250px;
-        margin-right: 150px;
-    }
-
-    #section-3 {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #section-3 img {
-        width: 100px;
+    
+    #client img {
+        height: 18px;
         padding-left: 20px;
+        padding-right: 20px;  
+    }
+
+    section h2 {
+        font-size: 40px;
+        padding-left: 40px;  
+    }
+   
+    
+    .containerProject {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        margin:100px auto;
+    }
+    
+    .box {
         display: flex;
-        justify-content: space-between;
-    }
-
-    #section-4 h2 {
-        font-size: 30px;
-        margin-top: 100px;
-    }
-
-    .recent-box {
-        width: 210px;
-        height: 330px;
+        width: 520px;
+        height: 690px;
         background-color: white;
-    }
+        flex-direction: column;
+        margin-top: 30px ;
 
-    .boxes {
-        width: 210px;
-        height: 150px;
+    }
+    
+    .box-img {
+        width: 520px;
+        height: 690px;
         top: 15px;
     }
 
-    .black {
-        height: 400px;
-        width: 900px;
+    #structureProject h4 {
+        padding-left: 10px;
+        font-size: 30px;    
+    }
+    
+    #structureProject p {
+        padding-left: 10px;
+        font-size: 20px;   
+        padding-top: 8px;
+    }
+    
+    #structureProject a {
+        padding-left: 10px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+        font-size: 20px;   
     }
 
+    .black-box {
+        height: 500px;   
+    }
+    
     .smilles {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
-
-    #testimonials {
-        margin-top: 50px;
-    }
-
+    
     #testimonials h2 {
-        font-size: 30px;
-        margin-top: 20px;
+        font-size: 20px;
+        padding-left: 0px; 
+        padding-top: 0px;  
     }
-
+    
     .circle {
-        font-size: 15px;
-        margin-top: 50px;
-    }
-
-    .profile {
-        width: 50px;
-        height: 50px;
-    }
-
-    .midle h5 {
-        margin-top: 10px;
         font-size: 10px;
     }
-
-    .midle p {
+    
+    .profile {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .midle h5 {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    .midle p{
         font-size: 8px;
-        margin-left: 12px;
+        padding-left: 10px;
     }
 
-}*/
+    .services-container {
+        display: block;
+        justify-content: center; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        margin:100px auto;
+        padding-bottom: 25px;
+        gap:30px;
+
+    }
     
+    .card-services{
+        width: 520px;
+        height: 550px;
+        
+        
+    }   
+    
+    #services img {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 100px;
+    }
+    #services .blueCircle {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    #services h4 {
+       font-size: 30px;
+       padding-left: 10px;
+       padding-top:75px;
+    }
+    
+    #services p {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    #services a{
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    footer{
+        text-align: center;
+        margin: auto;
+    }
+        
+    .footer-circle {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+    }
+    
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+    
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 13px;
+        color: rgb(66, 66, 66);
+    }
+    
+    .footer-columns {
+        margin-top: 70px;
+    }
+    .first-column p{
+        font-size: 13px;
+    }
+   
+}
