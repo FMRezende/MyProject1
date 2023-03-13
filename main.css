@@ -149,6 +149,8 @@ nav a {
     width: 340px;
     height: 444px;
     background-color: white;
+    box-shadow: 5px 5px 5px #888;
+    box-sizing: border-box;
 }
 
 .box-img {
@@ -267,6 +269,8 @@ section h2 {
     width: 340px;
     height: 400px;
     background-color: white;
+    box-shadow: 5px 5px 5px #888;
+    box-sizing: border-box;
 }
 
 .blueCircle {

@@ -7,14 +7,21 @@ body {
     padding: 0;
     margin: 0;
 }
+body header, section, .navigation {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-.padre{
-    display:flex;
+body section, footer {
+    margin-top: 130px;
+}
+
+.padre {
+    display: flex;
     flex-flow: column nowrap;
 }
 
-.start {
-    padding: 0 170px;
+header {
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
@@ -25,7 +32,7 @@ nav {
     width: 300px;
 }
 
-.start nav {
+header nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -33,7 +40,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: rgb(66, 66, 66);   
+    color: rgb(66, 66, 66);
 }
 
 .link-btn {
@@ -41,7 +48,7 @@ nav a {
     width: 90px;
     margin: 40px auto 0 auto;
     padding: 08px 20px;
-    flex:5 1 auto;
+    flex: 5 1 auto;
     background-color: blue;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -51,18 +58,15 @@ nav a {
     text-decoration: none;
 }
 
-
-section {
-    height: 700px;
-    width: 1150px;
-    display: flex;
-    margin: auto;
-    margin-top: 120px;
+.navigation{ 
+    display: none;
 }
+
+
 
 .container-text h1 {
     margin: auto;
-    font-size: 55px;
+    font-size: 60px;
     font-weight: bold;
 }
 
@@ -75,14 +79,14 @@ input {
     background-color: rgb(224, 236, 240);
     color: rgb(66, 66, 66);
     width: 100%;
-    height: 40px;
+    height: 70px;
     border: none;
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
 button {
-    margin-top: 90px;
+    margin-top: 40px;
     padding: 5px;
     background-color: blue;
     color: white;
@@ -93,7 +97,11 @@ button {
 }
 
 #form-container {
-    width: 100%;
+
+    width: 1100px;
+    height: 660px;
+    margin:0 auto;
+    margin-top:130px;
 }
 
 #comment {
@@ -106,6 +114,16 @@ button {
     border: none;
     margin-right: 10px;
 
+}
+#form-container p{
+    font-size: 20px;
+}
+#name, #phone, #email, #comment{
+    font-size:17px ;
+}
+#comment{
+    width: 1100px;
+    height: 200px;
 }
 
 .container-inputs p {
@@ -141,7 +159,6 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 70px;
-
 }
 
 .footer-circle {
@@ -175,9 +192,254 @@ footer {
     flex-direction: column;
     justify-content: center;
     color: rgb(66, 66, 66);
+}
+
+.first-column p {
+    margin-top: 40px;
+}
+.footer-circle img {
+    padding-top: 30px;
+    width: 100px;
+}
+
+.footer-circle p {
+    padding-top: 20px;
+    font-size: 15px;
+    color: rgb(66, 66, 66);
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.first-column {
+    width: 120px;
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(66, 66, 66);
 
 }
 
 .first-column p{
     margin-top: 40px;
+}
+@media screen and (min-width: 998px ) and (max-width:1180px) {
+    header {
+        justify-content:space-around;
+    }
+
+    .navigation{ 
+        display: none;
+    }
+
+    #form-container {
+
+        width: 900px;
+        height: 660px;
+        margin-top:150px;
+        margin-left:90px;
+    }
+    
+
+    input {
+        background-color: rgb(224, 236, 240);
+        color: rgb(66, 66, 66);
+        max-width: 800px;
+        height: 40px;
+        border: none;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .typeContact{
+        flex-direction: column;
+    }
+
+    .typeContact input {
+        max-width: 300px;
+    }
+
+    button {
+      
+        max-width:800px;
+        height: 70px;
+        justify-content: center;
+    }
+    
+    
+
+    .footer-circle {
+        margin: auto;
+        display: block;
+        width: 300px;
+    }
+    
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+    
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 15px;
+        color: rgb(66, 66, 66);
+    }
+    
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+   
+}
+
+@media screen and (min-width: 777px ) and (max-width:998px){
+
+    header {
+        justify-content:space-around;
+    }
+
+    .navigation{
+        display: none;
+    }
+    #form-container {
+
+        width: 700px;
+        height: 660px;
+        margin-top:150px;
+        margin-left:70px;
+    }
+    .container-text h1 {  
+        font-size: 40px;
+    }
+    .typeContact{
+        flex-direction: column;
+    }
+
+
+    .typeContact input {
+        max-width: 400px;
+    }
+
+    footer{
+        text-align: center;
+    }
+        
+    .footer-circle {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+    }
+    
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+    
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 13px;
+        color: rgb(66, 66, 66);
+    }
+    
+    .footer-columns {
+        margin-top: 70px;
+    }
+    .first-column p{
+        font-size: 13px;
+    }
+   
+}
+
+@media screen and  (max-width:776px){
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        gap: 150px;
+    }
+    header nav{        
+        display: none;
+    }
+
+    .link-btn {
+        display: block;
+        width: 50px;
+        margin: 40px auto 0 auto;
+        padding: 08px 10px;
+        font-size: 8px;    
+    }
+    .navigation {
+        margin-top: 10px;
+        width: 300px;   
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+    }
+    #form-container {
+
+        width: 400px;
+        height: 660px;
+        margin-top:100px;
+        margin-left:160px;
+    }
+    .container-text h1 {  
+        font-size: 30px;
+       
+    }
+    .typeContact{
+        flex-direction: column;
+    }
+
+
+    .typeContact input {
+        max-width: 400px;
+        flex-direction: column;
+    }
+
+    #comment{
+        position:static
+    }
+
+    button {
+        height: 40px;
+    }
+
+    footer{
+        text-align: center;
+        margin: auto;
+    }
+        
+    .footer-circle {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+    }
+    
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+    
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 13px;
+        color: rgb(66, 66, 66);
+    }
+    
+    .footer-columns {
+        margin-top: 70px;
+    }
+    .first-column p{
+        font-size: 13px;
+    }
+   
 }
