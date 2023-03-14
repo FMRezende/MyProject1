@@ -5,12 +5,15 @@ body {
     background: #F4F6FC;
 }
 
-body header, section {
+body header,
+section,
+.navigation {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-body section, footer {
+body section,
+footer {
     margin-top: 130px;
 }
 
@@ -56,38 +59,42 @@ nav a {
     text-decoration: none;
 }
 
-#start-2 {
+.navigation {
+    display: none;
+}
+
+#principal {
     display: flex;
     justify-content: space-between;
 }
 
-.container-text {
+.principalContainerText {
     display: flex;
     flex-direction: column;
 }
 
-#start-2 h1 {
+#principal h1 {
     padding: 5px 0;
-    font-size: 55px;
+    font-size: 60px;
     font-weight: bold;
     padding-top: 05px;
     display: flex;
 }
 
-#start-2 article {
+#principal article {
     font-size: 20px;
     padding-bottom: 50px;
     color: rgb(66, 66, 66);
 }
 
-#start-2 a {
+#principal a {
     padding: 15px 30px;
     font-size: 15px;
     text-decoration: none;
     text-align: center;
 }
 
-.container-man {
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,13 +108,13 @@ nav a {
     background-size: contain;
 }
 
-.container-man img {
+.hero img {
     width: 270px;
     height: 270px;
     align-self: flex-start;
 }
 
-.container-man img:last-of-type {
+.hero img:last-of-type {
     padding-top: 176px;
     align-self: flex-end;
 }
@@ -123,55 +130,60 @@ nav a {
     color: rgb(66, 66, 66);
 }
 
-#section-3 {
+#client {
     display: flex;
     justify-content: space-between;
 }
 
-#section-3 img {
+#client img {
     height: 32px;
     margin-top: 20px;
     padding-left: 10px;
     filter: grayscale(100%);
 }
 
-.container {
+.containerProject {
     display: flex;
     position: relative;
     justify-content: space-between;
 }
 
-.recent-box {
-    width: 330px;
-    height: 440px;
+.box {
+    width: 340px;
+    height: 444px;
     background-color: white;
+    box-shadow: 5px 5px 5px #888;
+    box-sizing: border-box;
 }
 
-.boxes {
-    width: 330px;
+.box-img {
+    width: 340px;
     height: 240px;
     top: 15px;
 }
 
 
-#structure h4 {
+#structureProject h4 {
     padding-left: 30px;
+    font-size: 24px;
 }
 
-#structure p {
+#structureProject p {
     padding-left: 30px;
     color: rgb(66, 66, 66);
     padding-bottom: 40px;
+    font-size: 17px;
 }
 
-#structure a {
+#structureProject a {
     padding-left: 30px;
     color: blue;
     text-decoration: none;
     padding-bottom: 100px;
+    font-size: 17px;
 }
 
-.black {
+.black-box {
     max-width: 1320px;
     height: 622px;
     background-color: #292E47;
@@ -179,7 +191,7 @@ nav a {
     justify-content: space-between;
 }
 
-.coluna1 {
+.faces-colun {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -249,16 +261,19 @@ section h2 {
     margin-bottom: 23px;
 }
 
-.container2 {
+.services-container {
     display: flex;
     position: relative;
     justify-content: space-between;
+
 }
 
-.recent-box2 {
-    width: 300px;
-    height: 380px;
+.card-services {
+    width: 340px;
+    height: 400px;
     background-color: white;
+    box-shadow: 5px 5px 5px #888;
+    box-sizing: border-box;
 }
 
 .blueCircle {
@@ -270,29 +285,30 @@ section h2 {
     margin-left: 30px;
 }
 
-#structure2 img {
+#services img {
     margin-top: 20px;
     margin-left: 20px;
 }
 
-#structure2 h4 {
+#services h4 {
     padding-top: 10px;
     padding-left: 30px;
     padding-bottom: 30px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
-#structure2 p {
+#services p {
     padding-left: 30px;
     color: rgb(66, 66, 66);
     padding-bottom: 30px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
-#structure2 a {
+#services a {
     padding-left: 30px;
     color: blue;
     text-decoration: none;
+    font-size: 17px;
 }
 
 #bigYellow {
@@ -392,98 +408,255 @@ footer {
     margin-top: 40px;
 }
 
-@media screen and (min-width: 768px ) and (max-width:1023px) {
+@media screen and (min-width: 998px) and (max-width:1145px) {
 
-
-    #start-2 h1 {
-        font-size: 30px;
+    header {
+        justify-content: space-around;
     }
 
-    #start-2 article {
+    .navigation {
+        display: none;
+    }
+
+    #principal {
+        display: flex;
+        justify-content: center
+    }
+
+    .principalContainerText {
+        padding-top: 30px;
+    }
+
+    #principal h1 {
+        font-size: 40px;
+    }
+
+    #principal article {
+        font-size: 10px;
+    }
+
+    #principal a {
+        font-size: 10px;
+    }
+
+    .hero {
+        width: 450px;
+        height: 450px;
+    }
+
+    .hero img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero img:last-of-type {
+        padding-top: 120px;
+    }
+
+    #client {
+        justify-content: space-around;
+    }
+
+    #client img {
+        height: 28px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    section h2 {
+        font-size: 30px;
+        padding-left: 40px;
+    }
+
+    .containerProject {
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .box {
+        width: 280px;
+        height: 400px;
+        background-color: white;
+    }
+
+    .box-img {
+        width: 280px;
+        height: 220px;
+        top: 15px;
+    }
+
+    #structureProject h4 {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    #structureProject p {
+        padding-left: 10px;
         font-size: 15px;
     }
 
-    #start-2 a {
+    #structureProject a {
+        padding-left: 10px;
+    }
+
+    .services-container {
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-services {
+        width: 280px;
+        height: 360px;
+    }
+
+    #services img {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #services h4 {
+        font-size: 20px;
+    }
+
+    #services p {
+        font-size: 15px;
+    }
+
+
+    .footer-circle {
+        margin: auto;
+        display: block;
+        width: 300px;
+    }
+
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 15px;
+        color: rgb(66, 66, 66);
+    }
+
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 777px) and (max-width:998px) {
+    header {
+        justify-content: space-around;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    #principal {
+        display: flex;
+        justify-content: center
+    }
+
+    .principalContainerText {
+        padding-top: 30px;
+    }
+
+    #principal h1 {
+        font-size: 30px;
+    }
+
+    #principal article {
         font-size: 10px;
-        padding: 10px;
     }
 
-    .container-man {
-        padding-top: 180px;
-        height: 500px;
-        margin-left: 60px;
+    #principal a {
+        font-size: 10px;
     }
 
-    .man {
+    .hero {
         width: 400px;
         height: 400px;
     }
 
-    .blueCard {
-        width: 170px;
-        height: 230px;
-        margin-left: -380px;
-        margin-top: -20px;
+    .hero img {
+        width: 180px;
+        height: 180px;
     }
 
-    .projectOk {
-        width: 170px;
-        height: 230px;
-        margin-top: 250px;
-        margin-right: 150px;
+    .hero img:last-of-type {
+        padding-top: 130px;
     }
 
-    #section-3 {
-        display: flex;
-        justify-content: space-between;
+    #client {
+        justify-content: space-around;
     }
 
-    #section-3 img {
-        width: 100px;
+    #client img {
+        height: 28px;
         padding-left: 20px;
-        display: flex;
-        justify-content: space-between;
+        padding-right: 20px;
     }
 
-    #section-4 h2 {
-        font-size: 30px;
-        margin-top: 100px;
+    section h2 {
+        font-size: 25px;
+        padding-left: 40px;
     }
 
-    .recent-box {
-        width: 210px;
-        height: 330px;
+    .containerProject {
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .box {
+        width: 220px;
+        height: 390px;
         background-color: white;
     }
 
-    .boxes {
-        width: 210px;
-        height: 150px;
+    .box-img {
+        width: 220px;
+        height: 230px;
         top: 15px;
     }
 
-    .black {
-        height: 400px;
-        width: 900px;
+    #structureProject h4 {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    #structureProject p {
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    #structureProject a {
+        padding-left: 10px;
+    }
+
+    .black-box {
+        height: 500px;
     }
 
     .smilles {
-        width: 120px;
-        height: 120px;
-    }
-
-    #testimonials {
-        margin-top: 50px;
+        width: 150px;
+        height: 150px;
     }
 
     #testimonials h2 {
-        font-size: 30px;
-        margin-top: 20px;
+        font-size: 25px;
+        padding-left: 0px;
+        padding-top: 0px;
     }
 
     .circle {
-        font-size: 15px;
-        margin-top: 50px;
+        font-size: 10px;
     }
 
     .profile {
@@ -493,13 +666,316 @@ footer {
 
     .midle h5 {
         margin-top: 10px;
+    }
+
+    .services-container {
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card-services {
+        width: 220px;
+        height: 320px;
+    }
+
+    #services img {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #services h4 {
+        font-size: 15px;
+        padding-left: 5px;
+    }
+
+    #services p {
+        font-size: 13px;
+        padding-left: 5px;
+    }
+
+    #services a {
+        padding-left: 5px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-circle {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+    }
+
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 13px;
+        color: rgb(66, 66, 66);
+    }
+
+    .footer-columns {
+        margin-top: 70px;
+    }
+
+    .first-column p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:776px) {
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        gap: 150px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .link-btn {
+        display: block;
+        width: 50px;
+        margin: 40px auto 0 auto;
+        padding: 08px 10px;
+        font-size: 8px;
+
+    }
+
+    .navigation {
+        margin-top: 10px;
+        width: 300px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+    }
+
+    #principal {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+
+    }
+
+    .principalContainerText {
+        padding-top: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #principal h1 {
+        font-size: 50px;
+        justify-content: center;
+
+    }
+
+    #principal article {
+        font-size: 15px;
+    }
+
+    #principal a {
+        font-size: 10px;
+    }
+
+    .hero {
+        width: 400px;
+        height: 400px;
+        margin-top: 50px;
+        margin: 100px auto;
+    }
+
+    .hero img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero img:last-of-type {
+        padding-top: 130px;
+    }
+
+    #client {
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    #client img {
+        height: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    section h2 {
+        font-size: 40px;
+        padding-left: 40px;
+    }
+
+
+    .containerProject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px auto;
+    }
+
+    .box {
+        display: flex;
+        width: 520px;
+        height: 690px;
+        background-color: white;
+        flex-direction: column;
+        margin-top: 30px;
+
+    }
+
+    .box-img {
+        width: 520px;
+        height: 690px;
+        top: 15px;
+    }
+
+    #structureProject h4 {
+        padding-left: 10px;
+        font-size: 30px;
+    }
+
+    #structureProject p {
+        padding-left: 10px;
+        font-size: 20px;
+        padding-top: 8px;
+    }
+
+    #structureProject a {
+        padding-left: 10px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .black-box {
+        height: 500px;
+    }
+
+    .smilles {
+        width: 100px;
+        height: 100px;
+    }
+
+    #testimonials h2 {
+        font-size: 20px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .circle {
+        font-size: 10px;
+    }
+
+    .profile {
+        width: 30px;
+        height: 30px;
+    }
+
+    .midle h5 {
+        margin-top: 5px;
         font-size: 10px;
     }
 
     .midle p {
         font-size: 8px;
-        margin-left: 12px;
+        padding-left: 10px;
+    }
+
+    .services-container {
+        display: block;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px auto;
+        padding-bottom: 25px;
+        gap: 30px;
+
+    }
+
+    .card-services {
+        width: 520px;
+        height: 550px;
+
+
+    }
+
+    #services img {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 100px;
+    }
+
+    #services .blueCircle {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 150px;
+        height: 150px;
+    }
+
+    #services h4 {
+        font-size: 30px;
+        padding-left: 10px;
+        padding-top: 75px;
+    }
+
+    #services p {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    #services a {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    footer {
+        text-align: center;
+        margin: auto;
+    }
+
+    .footer-circle {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+    }
+
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 13px;
+        color: rgb(66, 66, 66);
+    }
+
+    .footer-columns {
+        margin-top: 70px;
+    }
+
+    .first-column p {
+        font-size: 13px;
     }
 
 }
-    

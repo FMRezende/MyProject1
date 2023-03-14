@@ -5,13 +5,24 @@ body {
     background: #F4F6FC;
 }
 
-.padre{
-    display:flex;
+body header,
+section,
+.navigation {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+body section,
+footer {
+    margin-top: 130px;
+}
+
+.padre {
+    display: flex;
     flex-flow: column nowrap;
 }
 
-.start {
-    padding: 0 170px;
+header {
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
@@ -22,7 +33,7 @@ nav {
     width: 300px;
 }
 
-.start nav {
+header nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -30,7 +41,15 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: rgb(66, 66, 66);   
+    color: rgb(66, 66, 66);
+}
+
+section h2 {
+    font-size: 40px;
+    line-height: 47px;
+    color: #292E47;
+    margin: 0;
+    margin-bottom: 23px;
 }
 
 .link-btn {
@@ -38,8 +57,7 @@ nav a {
     width: 90px;
     margin: 40px auto 0 auto;
     padding: 08px 20px;
-    flex:5 1 auto;
-
+    flex: 5 1 auto;
     background-color: blue;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -49,135 +67,124 @@ nav a {
     text-decoration: none;
 }
 
-.container-text {
-    margin-left: 180px;
-    padding-top: 100px;
+.navigation {
+    display: none;
 }
 
-#start-2 h1 {
 
-    font-size: 55px;
-    font-weight: bold;
-    margin-bottom: 20px;
+h1 {
+    margin: auto;
+    font-size: 60px;
+    margin-bottom: 23px;
+
+}
+
+.container-text {
+    line-height: 47px;
+    color: #292E47;
+    margin: 0;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container-text p {
+    font-size: 24px;
 }
 
 .container-text p b {
     color: rgb(87, 86, 86);
-
-}
-
-.date {
     display: flex;
     justify-content: space-between;
-    margin-right: 180px;
+    margin: auto;
 }
 
 .date-project {
     color: rgb(167, 162, 162);
 }
 
-#section-4 h2 {
-
-    font-size: 40px;
-    line-height: 47px;
-    padding-top: 80px;
-    color: #292E47;
+.bigImgPage {
+    margin: auto;
+    width: 1100px;
+    height: 444px;
+    display: flex;
+    justify-content: center;
 }
 
-.recent {
-    margin-left: 185px;
-
+.pageText {
+    justify-content: center;
+    margin-top: 70px;
+    font-size: 20px;
 }
 
-.container {
-
+.containerProject {
     display: flex;
     position: relative;
     justify-content: space-between;
-    padding: 0 190px;
-
 }
 
-.recent-box {
-
+.box {
     width: 330px;
     height: 440px;
     background-color: white;
-}
-
-.ImgPage {
-
-    display: flex;
-    justify-content: center;
-    height: 600px;
+    box-shadow: 5px 5px 5px #888;
+    box-sizing: border-box;
 
 }
 
-.bigImgPage {
-    margin-top: 50px;
-    height: 500px;
-    width: 1150px;
-}
-
-.ImgPageText {
-
-    height: auto;
-    margin: auto;
-
-}
-
-.PageText {
-    justify-content: center;
-    margin: auto 190px;
-}
-
-.first {
-
+.box-img {
     width: 330px;
     height: 240px;
     top: 15px;
 }
 
 
-#structure h4 {
+#structureProject h4 {
     padding-left: 30px;
+    font-size: 24px;
+
 }
 
-#structure p {
+#structureProject p {
     padding-left: 30px;
     color: rgb(66, 66, 66);
     padding-bottom: 40px;
+    font-size: 17px;
 }
 
-#structure a {
+#structureProject a {
     padding-left: 30px;
     color: blue;
     text-decoration: none;
     padding-bottom: 100px;
-
+    font-size: 17px;
 }
 
 #bigYellow {
+    max-width: 1320px;
     height: 500px;
-    width: 1300px;
     background-color: rgb(252, 208, 62);
     display: flex;
-    margin: auto;
-    margin-top: 120px;
-}
-
-.yellow-text {
-    text-align: center;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-bottom: 50px;
     color: rgb(66, 66, 66);
-
 }
 
 .btn-sectionYell {
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
+}
 
+.btn-sectionYell button {
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 60px;
+    width: 200px;
+    margin-left: 20px;
 }
 
 .yellow-text h2 {
@@ -187,7 +194,6 @@ nav a {
 
 .yellow-text p {
     font-size: 15px;
-    
 }
 
 input {
@@ -199,16 +205,6 @@ input {
     width: 350px;
 }
 
-button {
-    background-color: blue;
-    color: white;
-    border: none;
-    height: 60px;
-    width: 200px;
-    margin-left: 10px;
-
-}
-
 .mail-card {
     background-color: white
 }
@@ -216,14 +212,13 @@ button {
 .mail {
     margin-top: 15px;
     margin-left: 15px;
-
 }
+
 footer {
     height: 300px;
     display: flex;
     justify-content: center;
     margin-top: 70px;
-
 }
 
 .footer-circle {
@@ -257,9 +252,381 @@ footer {
     flex-direction: column;
     justify-content: center;
     color: rgb(66, 66, 66);
+}
+
+.first-column p {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 998px) and (max-width:1145px) {
+
+    header {
+        justify-content: space-around;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    section h2 {
+        font-size: 30px;
+        padding-left: 40px;
+    }
+
+    h1 {
+        padding: 0 100px;
+    }
+
+    .container-text {
+        padding: 0 100px;
+    }
+
+    .container-text p {
+        font-size: 24px;
+    }
+
+    .container-text p b {
+        color: rgb(87, 86, 86);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .date-project {
+        color: rgb(167, 162, 162);
+    }
+
+    .bigImgPage {
+        margin: auto;
+        width: 900px;
+        height: 444px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .pageText {
+        justify-content: center;
+        margin: 70px 100px;
+        font-size: 18px;
+    }
+
+    .containerProject {
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .box {
+        width: 280px;
+        height: 400px;
+        background-color: white;
+    }
+
+    .box-img {
+        width: 280px;
+        height: 220px;
+        top: 15px;
+    }
+
+    #structureProject h4 {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    #structureProject p {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    #structureProject a {
+        padding-left: 10px;
+    }
+
+
+    .footer-circle {
+        margin: auto;
+        display: block;
+        width: 300px;
+    }
+
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 15px;
+        color: rgb(66, 66, 66);
+    }
+
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
 
 }
 
-.first-column p{
-    margin-top: 40px;
+
+@media screen and (min-width: 777px) and (max-width:998px) {
+    header {
+        justify-content: space-around;
+
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    section h2 {
+        font-size: 25px;
+        padding-left: 40px;
+    }
+
+    h1 {
+        padding: 0 70px;
+        font-size: 40px;
+    }
+
+    .container-text {
+        padding: 0 70px;
+    }
+
+    .container-text p {
+        font-size: 20px;
+    }
+
+    .container-text p b {
+        color: rgb(87, 86, 86);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .bigImgPage {
+        margin: auto;
+        width: 800px;
+        height: 444px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .pageText {
+        justify-content: center;
+        margin: 70px 70px;
+        font-size: 15px;
+    }
+
+    .containerProject {
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .box {
+        width: 220px;
+        height: 390px;
+        background-color: white;
+    }
+
+    .box-img {
+        width: 220px;
+        height: 230px;
+        top: 15px;
+    }
+
+    #structureProject h4 {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    #structureProject p {
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    #structureProject a {
+        padding-left: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-circle {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+    }
+
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 13px;
+        color: rgb(66, 66, 66);
+    }
+
+    .footer-columns {
+        margin-top: 70px;
+    }
+
+    .first-column p {
+        font-size: 13px;
+    }
+
+}
+
+
+@media screen and (max-width:777px) {
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        gap: 150px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .link-btn {
+        display: block;
+        width: 50px;
+        margin: 40px auto 0 auto;
+        padding: 08px 10px;
+        font-size: 8px;
+
+    }
+
+    .navigation {
+        margin-top: 10px;
+        width: 300px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section h2 {
+        font-size: 40px;
+        padding-left: 40px;
+    }
+
+    h1 {
+        padding: 0 140px;
+        font-size: 40px;
+    }
+
+    .container-text {
+        padding: 0 140px;
+    }
+
+    .container-text p {
+        font-size: 20px;
+    }
+
+    .container-text p b {
+        color: rgb(87, 86, 86);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .bigImgPage {
+        margin: auto;
+        width: 500px;
+        height: 444px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pageText {
+        justify-content: center;
+        margin: 70px 70px;
+        font-size: 15px;
+    }
+
+
+    .containerProject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px auto;
+        gap: 30px;
+    }
+
+    .container-text {
+        display: block;
+    }
+
+    .box {
+        display: flex;
+        width: 520px;
+        height: 690px;
+        background-color: white;
+        flex-direction: column;
+        margin-top: 30px;
+
+    }
+
+    .box-img {
+        width: 520px;
+        height: 690px;
+        top: 15px;
+    }
+
+    #structureProject h4 {
+        padding-left: 10px;
+        font-size: 30px;
+    }
+
+    #structureProject p {
+        padding-left: 10px;
+        font-size: 20px;
+        padding-top: 8px;
+    }
+
+    #structureProject a {
+        padding-left: 10px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+
+    footer {
+        text-align: center;
+        margin: auto;
+    }
+
+    .footer-circle {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+    }
+
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 13px;
+        color: rgb(66, 66, 66);
+    }
+
+    .footer-columns {
+        margin-top: 70px;
+    }
+
+    .first-column p {
+        font-size: 13px;
+    }
 }

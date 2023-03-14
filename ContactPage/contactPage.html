@@ -9,26 +9,27 @@
   </head>
   <body>
     <header>
-      <div class="start">
-        <div>
-          <a href="#">
-            <img src="/assets/circle.svg" alt="circle" />
-          </a>
-        </div>
-       
-          <nav>
-              <a href="#">Home</a></li>
-              <a href="#">Projects</a></li>
-              <a href="#">Services</a></li>
-          </nav>
-        
-        <div>
-          <a href="#" class="link-btn">Contact us</a>
-        </div>
+      <div>
+        <a href="#">
+          <img src="/assets/circle.svg" alt="circle" />
+        </a>
+      </div>
+      <nav>
+          <a href="/index.html">Home</a>
+          <a href="#">Projects</a>
+          <a href="#">Services</a>
+      </nav>
+      
+      <div>
+        <a href="#" class="link-btn">Contact us</a>
       </div>
     </header>
-    <section>  
-            <form id="form-container" action="/some-action" method="post">
+    <nav class="navigation">
+      <a href="/index.html">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Services</a>
+    </nav>
+            <form id="form-container"action="/some-action" method="post">
                 <div class="container-text">
                     <h1>Contact Us</h1>
                 </div>
@@ -53,10 +54,11 @@
                     <p>Message</p>
                     <label for="comment"></label>
                     <textarea type="text" id="comment" name="comment" placeholder="Write your message here"></textarea>                   
-                <button type="submit">Submit</button>
             </div>
+            <button type="button" class="submitButton">Submit</button>
+
         </form>
-    </section>
+    
     <footer >
       <div class="footer-circle">
           <a href="#">
