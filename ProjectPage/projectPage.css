@@ -5,12 +5,15 @@ body {
     background: #F4F6FC;
 }
 
-body header, section, .navigation {
+body header,
+section,
+.navigation {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-body section, footer {
+body section,
+footer {
     margin-top: 130px;
 }
 
@@ -40,6 +43,7 @@ nav a {
     text-decoration: none;
     color: rgb(66, 66, 66);
 }
+
 section h2 {
     font-size: 40px;
     line-height: 47px;
@@ -63,36 +67,37 @@ section h2 {
     text-decoration: none;
 }
 
-.navigation{ 
+.navigation {
     display: none;
 }
 
 
- h1 {
-    margin:auto;
+h1 {
+    margin: auto;
     font-size: 60px;
     margin-bottom: 23px;
-   
+
 }
 
-.container-text{
+.container-text {
     line-height: 47px;
     color: #292E47;
     margin: 0;
     margin-bottom: 23px;
     display: flex;
-    justify-content: space-between;   
-    
+    justify-content: space-between;
+
 }
-.container-text p{
-font-size: 24px;
+
+.container-text p {
+    font-size: 24px;
 }
 
 .container-text p b {
     color: rgb(87, 86, 86);
     display: flex;
     justify-content: space-between;
-    margin:auto;
+    margin: auto;
 }
 
 .date-project {
@@ -100,7 +105,7 @@ font-size: 24px;
 }
 
 .bigImgPage {
-    margin: auto;    
+    margin: auto;
     width: 1100px;
     height: 444px;
     display: flex;
@@ -125,7 +130,7 @@ font-size: 24px;
     background-color: white;
     box-shadow: 5px 5px 5px #888;
     box-sizing: border-box;
-   
+
 }
 
 .box-img {
@@ -138,7 +143,7 @@ font-size: 24px;
 #structureProject h4 {
     padding-left: 30px;
     font-size: 24px;
-    
+
 }
 
 #structureProject p {
@@ -155,6 +160,7 @@ font-size: 24px;
     padding-bottom: 100px;
     font-size: 17px;
 }
+
 #bigYellow {
     max-width: 1320px;
     height: 500px;
@@ -252,70 +258,71 @@ footer {
     margin-top: 40px;
 }
 
-@media screen and (min-width: 998px ) and (max-width:1145px){
+@media screen and (min-width: 998px) and (max-width:1145px) {
 
     header {
-        justify-content:space-around;
+        justify-content: space-around;
     }
 
-    .navigation{ 
+    .navigation {
         display: none;
     }
 
     section h2 {
         font-size: 30px;
-        padding-left: 40px;  
+        padding-left: 40px;
     }
 
     h1 {
         padding: 0 100px;
     }
-    
-    .container-text{
-        padding: 0 100px;     
+
+    .container-text {
+        padding: 0 100px;
     }
-    .container-text p{
-    font-size: 24px;
+
+    .container-text p {
+        font-size: 24px;
     }
-    
+
     .container-text p b {
         color: rgb(87, 86, 86);
         display: flex;
         justify-content: space-between;
-        margin:auto;
+        margin: auto;
     }
-    
+
     .date-project {
         color: rgb(167, 162, 162);
     }
-    
+
     .bigImgPage {
-        margin: auto;    
-        width:900px;
+        margin: auto;
+        width: 900px;
         height: 444px;
         display: flex;
         justify-content: center;
-        
+
     }
-    
+
     .pageText {
         justify-content: center;
         margin: 70px 100px;
         font-size: 18px;
     }
-    
+
     .containerProject {
         justify-content: space-around;
         padding-left: 20px;
-        padding-right: 20px;  
+        padding-right: 20px;
     }
-    
+
     .box {
         width: 280px;
         height: 400px;
         background-color: white;
     }
-    
+
     .box-img {
         width: 280px;
         height: 220px;
@@ -324,36 +331,36 @@ footer {
 
     #structureProject h4 {
         padding-left: 10px;
-        font-size: 20px;    
+        font-size: 20px;
     }
-    
+
     #structureProject p {
         padding-left: 10px;
-        font-size: 15px;   
+        font-size: 15px;
     }
-    
+
     #structureProject a {
         padding-left: 10px;
     }
 
-    
+
     .footer-circle {
         margin: auto;
         display: block;
         width: 300px;
     }
-    
+
     .footer-circle img {
         padding-top: 30px;
         width: 100px;
     }
-    
+
     .footer-circle p {
         padding-top: 20px;
         font-size: 15px;
         color: rgb(66, 66, 66);
     }
-    
+
     .footer-columns {
         display: flex;
         justify-content: space-between;
@@ -363,65 +370,68 @@ footer {
 }
 
 
-@media screen and (min-width: 777px ) and (max-width:998px){
+@media screen and (min-width: 777px) and (max-width:998px) {
     header {
-        justify-content:space-around;
-        
+        justify-content: space-around;
+
     }
 
-    .navigation{
+    .navigation {
         display: none;
     }
+
     section h2 {
         font-size: 25px;
-        padding-left: 40px;  
+        padding-left: 40px;
     }
+
     h1 {
         padding: 0 70px;
         font-size: 40px;
     }
-    
-    .container-text{
-        padding: 0 70px;    
+
+    .container-text {
+        padding: 0 70px;
     }
-    .container-text p{
-    font-size: 20px;
+
+    .container-text p {
+        font-size: 20px;
     }
-    
+
     .container-text p b {
         color: rgb(87, 86, 86);
         display: flex;
         justify-content: space-between;
-        margin:auto;
+        margin: auto;
     }
-    
+
     .bigImgPage {
-        margin: auto;    
-        width:800px;
+        margin: auto;
+        width: 800px;
         height: 444px;
         display: flex;
         justify-content: center;
-        
+
     }
-    
+
     .pageText {
         justify-content: center;
         margin: 70px 70px;
         font-size: 15px;
     }
-    
+
     .containerProject {
         justify-content: space-around;
         padding-left: 30px;
-        padding-right: 30px;  
+        padding-right: 30px;
     }
-    
+
     .box {
         width: 220px;
         height: 390px;
         background-color: white;
     }
-    
+
     .box-img {
         width: 220px;
         height: 230px;
@@ -430,49 +440,51 @@ footer {
 
     #structureProject h4 {
         padding-left: 10px;
-        font-size: 15px;    
+        font-size: 15px;
     }
-    
+
     #structureProject p {
         padding-left: 10px;
-        font-size: 13px;   
+        font-size: 13px;
     }
-    
+
     #structureProject a {
         padding-left: 10px;
     }
-    footer{
+
+    footer {
         text-align: center;
     }
-        
+
     .footer-circle {
         text-align: left;
         margin: auto;
         width: 200px;
     }
-    
+
     .footer-circle img {
         padding-top: 30px;
         width: 100px;
     }
-    
+
     .footer-circle p {
         padding-top: 20px;
         font-size: 13px;
         color: rgb(66, 66, 66);
     }
-    
+
     .footer-columns {
         margin-top: 70px;
     }
-    .first-column p{
+
+    .first-column p {
         font-size: 13px;
     }
 
 }
 
 
-@media screen and (max-width:777px){
+@media screen and (max-width:777px) {
 
     header {
         display: flex;
@@ -480,21 +492,23 @@ footer {
         align-items: baseline;
         gap: 150px;
     }
-    header nav{        
+
+    header nav {
         display: none;
     }
+
     .link-btn {
         display: block;
         width: 50px;
         margin: 40px auto 0 auto;
         padding: 08px 10px;
         font-size: 8px;
-        
+
     }
 
     .navigation {
         margin-top: 10px;
-        width: 300px;   
+        width: 300px;
         list-style: none;
         display: flex;
         justify-content: space-between;
@@ -502,63 +516,66 @@ footer {
 
     section h2 {
         font-size: 40px;
-        padding-left: 40px;  
+        padding-left: 40px;
     }
+
     h1 {
         padding: 0 140px;
         font-size: 40px;
     }
-    
-    .container-text{
-        padding: 0 140px;    
+
+    .container-text {
+        padding: 0 140px;
     }
-    .container-text p{
-    font-size: 20px;
+
+    .container-text p {
+        font-size: 20px;
     }
-    
+
     .container-text p b {
         color: rgb(87, 86, 86);
         display: flex;
         justify-content: space-between;
-        margin:auto;
+        margin: auto;
     }
-    
+
     .bigImgPage {
-        margin: auto;    
-        width:500px;
+        margin: auto;
+        width: 500px;
         height: 444px;
         display: flex;
-        justify-content: center;     
+        justify-content: center;
     }
-    
+
     .pageText {
         justify-content: center;
         margin: 70px 70px;
         font-size: 15px;
     }
-    
-      
+
+
     .containerProject {
-        display: flex; 
+        display: flex;
         flex-direction: column;
         align-items: center;
-        margin:100px auto;
-        gap:30px;
+        margin: 100px auto;
+        gap: 30px;
     }
-    .container-text{
+
+    .container-text {
         display: block;
     }
-    
+
     .box {
         display: flex;
         width: 520px;
         height: 690px;
         background-color: white;
         flex-direction: column;
-        margin-top: 30px ;
+        margin-top: 30px;
 
     }
-    
+
     .box-img {
         width: 520px;
         height: 690px;
@@ -567,47 +584,49 @@ footer {
 
     #structureProject h4 {
         padding-left: 10px;
-        font-size: 30px;    
+        font-size: 30px;
     }
-    
+
     #structureProject p {
         padding-left: 10px;
-        font-size: 20px;   
+        font-size: 20px;
         padding-top: 8px;
     }
-    
+
     #structureProject a {
         padding-left: 10px;
         padding-top: 35px;
         padding-bottom: 15px;
-        font-size: 20px;   
+        font-size: 20px;
     }
-    footer{
+
+    footer {
         text-align: center;
         margin: auto;
     }
-        
+
     .footer-circle {
         text-align: left;
         margin: auto;
         width: 200px;
     }
-    
+
     .footer-circle img {
         padding-top: 30px;
         width: 100px;
     }
-    
+
     .footer-circle p {
         padding-top: 20px;
         font-size: 13px;
         color: rgb(66, 66, 66);
     }
-    
+
     .footer-columns {
         margin-top: 70px;
     }
-    .first-column p{
+
+    .first-column p {
         font-size: 13px;
     }
 }

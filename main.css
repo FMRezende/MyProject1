@@ -5,12 +5,15 @@ body {
     background: #F4F6FC;
 }
 
-body header, section, .navigation {
+body header,
+section,
+.navigation {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-body section, footer {
+body section,
+footer {
     margin-top: 130px;
 }
 
@@ -56,7 +59,7 @@ nav a {
     text-decoration: none;
 }
 
-.navigation{ 
+.navigation {
     display: none;
 }
 
@@ -262,10 +265,10 @@ section h2 {
     display: flex;
     position: relative;
     justify-content: space-between;
-    
+
 }
 
-.card-services{
+.card-services {
     width: 340px;
     height: 400px;
     background-color: white;
@@ -405,45 +408,47 @@ footer {
     margin-top: 40px;
 }
 
-@media screen and (min-width: 998px ) and (max-width:1145px) {
+@media screen and (min-width: 998px) and (max-width:1145px) {
 
     header {
-        justify-content:space-around;
+        justify-content: space-around;
     }
 
-    .navigation{ 
+    .navigation {
         display: none;
     }
+
     #principal {
         display: flex;
-        justify-content: center     
+        justify-content: center
     }
-    .principalContainerText{
+
+    .principalContainerText {
         padding-top: 30px;
     }
-    
+
     #principal h1 {
         font-size: 40px;
     }
-    
+
     #principal article {
         font-size: 10px;
     }
-    
+
     #principal a {
         font-size: 10px;
     }
-    
+
     .hero {
         width: 450px;
         height: 450px;
     }
-    
+
     .hero img {
         width: 200px;
         height: 200px;
     }
-    
+
     .hero img:last-of-type {
         padding-top: 120px;
     }
@@ -451,30 +456,30 @@ footer {
     #client {
         justify-content: space-around;
     }
-    
+
     #client img {
         height: 28px;
         padding-left: 20px;
-        padding-right: 20px;  
+        padding-right: 20px;
     }
 
     section h2 {
         font-size: 30px;
-        padding-left: 40px;  
+        padding-left: 40px;
     }
-    
+
     .containerProject {
         justify-content: space-around;
         padding-left: 20px;
-        padding-right: 20px;  
+        padding-right: 20px;
     }
-    
+
     .box {
         width: 280px;
         height: 400px;
         background-color: white;
     }
-    
+
     .box-img {
         width: 280px;
         height: 220px;
@@ -483,14 +488,14 @@ footer {
 
     #structureProject h4 {
         padding-left: 10px;
-        font-size: 20px;    
+        font-size: 20px;
     }
-    
+
     #structureProject p {
         padding-left: 10px;
-        font-size: 15px;   
+        font-size: 15px;
     }
-    
+
     #structureProject a {
         padding-left: 10px;
     }
@@ -498,45 +503,45 @@ footer {
     .services-container {
         justify-content: space-around;
         padding-left: 20px;
-        padding-right: 20px;    
+        padding-right: 20px;
     }
-    
-    .card-services{
+
+    .card-services {
         width: 280px;
         height: 360px;
-    }   
-    
+    }
+
     #services img {
         margin-top: 20px;
         margin-left: 20px;
     }
-    
+
     #services h4 {
-       font-size: 20px;
+        font-size: 20px;
     }
-    
+
     #services p {
         font-size: 15px;
     }
 
-    
+
     .footer-circle {
         margin: auto;
         display: block;
         width: 300px;
     }
-    
+
     .footer-circle img {
         padding-top: 30px;
         width: 100px;
     }
-    
+
     .footer-circle p {
         padding-top: 20px;
         font-size: 15px;
         color: rgb(66, 66, 66);
     }
-    
+
     .footer-columns {
         display: flex;
         justify-content: space-between;
@@ -544,44 +549,46 @@ footer {
     }
 }
 
-@media screen and (min-width: 777px ) and (max-width:998px){
+@media screen and (min-width: 777px) and (max-width:998px) {
     header {
-        justify-content:space-around;
+        justify-content: space-around;
     }
 
-    .navigation{
+    .navigation {
         display: none;
     }
+
     #principal {
         display: flex;
-        justify-content: center     
+        justify-content: center
     }
-    .principalContainerText{
+
+    .principalContainerText {
         padding-top: 30px;
     }
-    
+
     #principal h1 {
         font-size: 30px;
     }
-    
+
     #principal article {
         font-size: 10px;
     }
-    
+
     #principal a {
         font-size: 10px;
     }
-    
+
     .hero {
         width: 400px;
         height: 400px;
     }
-    
+
     .hero img {
         width: 180px;
         height: 180px;
     }
-    
+
     .hero img:last-of-type {
         padding-top: 130px;
     }
@@ -589,30 +596,30 @@ footer {
     #client {
         justify-content: space-around;
     }
-    
+
     #client img {
         height: 28px;
         padding-left: 20px;
-        padding-right: 20px;  
+        padding-right: 20px;
     }
 
     section h2 {
         font-size: 25px;
-        padding-left: 40px;  
+        padding-left: 40px;
     }
-    
+
     .containerProject {
         justify-content: space-around;
         padding-left: 30px;
-        padding-right: 30px;  
+        padding-right: 30px;
     }
-    
+
     .box {
         width: 220px;
         height: 390px;
         background-color: white;
     }
-    
+
     .box-img {
         width: 220px;
         height: 230px;
@@ -621,42 +628,42 @@ footer {
 
     #structureProject h4 {
         padding-left: 10px;
-        font-size: 15px;    
+        font-size: 15px;
     }
-    
+
     #structureProject p {
         padding-left: 10px;
-        font-size: 13px;   
+        font-size: 13px;
     }
-    
+
     #structureProject a {
         padding-left: 10px;
     }
 
     .black-box {
-        height: 500px;   
+        height: 500px;
     }
-    
+
     .smilles {
         width: 150px;
         height: 150px;
     }
-    
+
     #testimonials h2 {
         font-size: 25px;
-        padding-left: 0px; 
-        padding-top: 0px;  
+        padding-left: 0px;
+        padding-top: 0px;
     }
-    
+
     .circle {
         font-size: 10px;
     }
-    
+
     .profile {
         width: 50px;
         height: 50px;
     }
-    
+
     .midle h5 {
         margin-top: 10px;
     }
@@ -664,63 +671,65 @@ footer {
     .services-container {
         justify-content: space-around;
         padding-left: 30px;
-        padding-right: 30px;    
+        padding-right: 30px;
     }
-    
-    .card-services{
+
+    .card-services {
         width: 220px;
         height: 320px;
-    }   
-    
+    }
+
     #services img {
         margin-top: 20px;
         margin-left: 20px;
     }
-    
+
     #services h4 {
-       font-size: 15px;
-       padding-left: 5px;
+        font-size: 15px;
+        padding-left: 5px;
     }
-    
+
     #services p {
         font-size: 13px;
         padding-left: 5px;
     }
 
-    #services a{
+    #services a {
         padding-left: 5px;
     }
 
-    footer{
+    footer {
         text-align: center;
     }
-        
+
     .footer-circle {
         text-align: left;
         margin: auto;
         width: 200px;
     }
-    
+
     .footer-circle img {
         padding-top: 30px;
         width: 100px;
     }
-    
+
     .footer-circle p {
         padding-top: 20px;
         font-size: 13px;
         color: rgb(66, 66, 66);
     }
-    
+
     .footer-columns {
         margin-top: 70px;
     }
-    .first-column p{
+
+    .first-column p {
         font-size: 13px;
     }
-   
+
 }
-@media screen and  (max-width:776px){
+
+@media screen and (max-width:776px) {
 
     header {
         display: flex;
@@ -728,70 +737,73 @@ footer {
         align-items: baseline;
         gap: 150px;
     }
-    header nav{        
+
+    header nav {
         display: none;
     }
+
     .link-btn {
         display: block;
         width: 50px;
         margin: 40px auto 0 auto;
         padding: 08px 10px;
         font-size: 8px;
-        
+
     }
 
     .navigation {
         margin-top: 10px;
-        width: 300px;   
+        width: 300px;
         list-style: none;
         display: flex;
         justify-content: space-between;
     }
-    
+
     .navigation a {
         text-decoration: none;
         color: rgb(66, 66, 66);
     }
-    
+
     #principal {
-        display: flex;   
+        display: flex;
         flex-direction: column;
         margin-top: 25px;
-        
+
     }
-    .principalContainerText{
+
+    .principalContainerText {
         padding-top: 30px;
         display: flex;
         text-align: center;
         justify-content: center;
     }
-    
+
     #principal h1 {
         font-size: 50px;
         justify-content: center;
-     
+
     }
-    
+
     #principal article {
         font-size: 15px;
     }
-    
+
     #principal a {
         font-size: 10px;
     }
-    
+
     .hero {
         width: 400px;
         height: 400px;
         margin-top: 50px;
-        margin:100px auto;
+        margin: 100px auto;
     }
-    
+
     .hero img {
         width: 180px;
         height: 180px;
     }
-    
+
     .hero img:last-of-type {
         padding-top: 130px;
     }
@@ -800,36 +812,36 @@ footer {
         justify-content: space-around;
         margin: auto;
     }
-    
+
     #client img {
         height: 18px;
         padding-left: 20px;
-        padding-right: 20px;  
+        padding-right: 20px;
     }
 
     section h2 {
         font-size: 40px;
-        padding-left: 40px;  
+        padding-left: 40px;
     }
-   
-    
+
+
     .containerProject {
-        display: flex; 
+        display: flex;
         flex-direction: column;
         align-items: center;
-        margin:100px auto;
+        margin: 100px auto;
     }
-    
+
     .box {
         display: flex;
         width: 520px;
         height: 690px;
         background-color: white;
         flex-direction: column;
-        margin-top: 30px ;
+        margin-top: 30px;
 
     }
-    
+
     .box-img {
         width: 520px;
         height: 690px;
@@ -838,129 +850,132 @@ footer {
 
     #structureProject h4 {
         padding-left: 10px;
-        font-size: 30px;    
+        font-size: 30px;
     }
-    
+
     #structureProject p {
         padding-left: 10px;
-        font-size: 20px;   
+        font-size: 20px;
         padding-top: 8px;
     }
-    
+
     #structureProject a {
         padding-left: 10px;
         padding-top: 35px;
         padding-bottom: 15px;
-        font-size: 20px;   
+        font-size: 20px;
     }
 
     .black-box {
-        height: 500px;   
+        height: 500px;
     }
-    
+
     .smilles {
         width: 100px;
         height: 100px;
     }
-    
+
     #testimonials h2 {
         font-size: 20px;
-        padding-left: 0px; 
-        padding-top: 0px;  
+        padding-left: 0px;
+        padding-top: 0px;
     }
-    
+
     .circle {
         font-size: 10px;
     }
-    
+
     .profile {
         width: 30px;
         height: 30px;
     }
-    
+
     .midle h5 {
         margin-top: 5px;
         font-size: 10px;
     }
-    .midle p{
+
+    .midle p {
         font-size: 8px;
         padding-left: 10px;
     }
 
     .services-container {
         display: block;
-        justify-content: center; 
-        display: flex; 
+        justify-content: center;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        margin:100px auto;
+        margin: 100px auto;
         padding-bottom: 25px;
-        gap:30px;
+        gap: 30px;
 
     }
-    
-    .card-services{
+
+    .card-services {
         width: 520px;
         height: 550px;
-        
-        
-    }   
-    
+
+
+    }
+
     #services img {
         margin-top: 20px;
         margin-left: 20px;
         width: 100px;
     }
+
     #services .blueCircle {
         margin-top: 20px;
         margin-left: 20px;
         width: 150px;
         height: 150px;
     }
-    
+
     #services h4 {
-       font-size: 30px;
-       padding-left: 10px;
-       padding-top:75px;
+        font-size: 30px;
+        padding-left: 10px;
+        padding-top: 75px;
     }
-    
+
     #services p {
         font-size: 20px;
         padding-left: 10px;
     }
 
-    #services a{
+    #services a {
         padding-left: 10px;
         font-size: 20px;
     }
 
-    footer{
+    footer {
         text-align: center;
         margin: auto;
     }
-        
+
     .footer-circle {
         text-align: left;
         margin: auto;
         width: 200px;
     }
-    
+
     .footer-circle img {
         padding-top: 30px;
         width: 100px;
     }
-    
+
     .footer-circle p {
         padding-top: 20px;
         font-size: 13px;
         color: rgb(66, 66, 66);
     }
-    
+
     .footer-columns {
         margin-top: 70px;
     }
-    .first-column p{
+
+    .first-column p {
         font-size: 13px;
     }
-   
+
 }
