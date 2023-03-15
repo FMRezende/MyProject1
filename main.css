@@ -369,13 +369,14 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 70px;
+    
 }
 
 .footer-circle {
     margin: auto;
     display: block;
-    width: 300px;
-    margin-left: 200px;
+    width: 100%;
+    margin-left: 100px;
 }
 
 .footer-circle img {
@@ -392,7 +393,9 @@ footer {
 .footer-columns {
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin:auto;
+    width:100%;
+    margin-right: 100px;
 }
 
 .first-column {
@@ -528,7 +531,8 @@ footer {
     .footer-circle {
         margin: auto;
         display: block;
-        width: 300px;
+        width: 100%;
+        margin-left: 100px;
     }
 
     .footer-circle img {
@@ -545,7 +549,9 @@ footer {
     .footer-columns {
         display: flex;
         justify-content: space-between;
-        margin-top: 60px;
+        margin:auto;
+        width:100%;
+        margin-right: 90px;
     }
 }
 
@@ -703,9 +709,10 @@ footer {
     }
 
     .footer-circle {
-        text-align: left;
         margin: auto;
-        width: 200px;
+        display: block;
+        width: 100%;
+        margin-left: 100px;
     }
 
     .footer-circle img {
@@ -720,7 +727,11 @@ footer {
     }
 
     .footer-columns {
-        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        margin:auto;
+        width:100%;
+        margin-right: 90px;
     }
 
     .first-column p {
@@ -729,7 +740,7 @@ footer {
 
 }
 
-@media screen and (max-width:776px) {
+@media screen and (max-width:777px) {
 
     header {
         display: flex;
@@ -810,18 +821,21 @@ footer {
 
     #client {
         justify-content: space-around;
-        margin: auto;
+        width:100%;
+        margin-top: 20px;
     }
 
     #client img {
         height: 18px;
-        padding-left: 20px;
-        padding-right: 20px;
+       
     }
 
     section h2 {
         font-size: 40px;
-        padding-left: 40px;
+        display: flex;
+        justify-content:center;
+        margin-left: 30px;
+        
     }
 
 
@@ -829,12 +843,13 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 100px auto;
+        width: 100%; 
     }
 
     .box {
         display: flex;
-        width: 520px;
+        width:100%;
+        max-width:400px;
         height: 690px;
         background-color: white;
         flex-direction: column;
@@ -843,42 +858,43 @@ footer {
     }
 
     .box-img {
-        width: 520px;
+        width: 100%;
         height: 690px;
         top: 15px;
     }
 
     #structureProject h4 {
-        padding-left: 10px;
         font-size: 30px;
     }
 
     #structureProject p {
-        padding-left: 10px;
         font-size: 20px;
         padding-top: 8px;
     }
 
     #structureProject a {
-        padding-left: 10px;
+        
         padding-top: 35px;
         padding-bottom: 15px;
         font-size: 20px;
     }
 
     .black-box {
-        height: 500px;
+        width: 100%;
+        height:400px;
+        
     }
-
-    .smilles {
-        width: 100px;
-        height: 100px;
+    .faces-colun{
+        display: none;   
+    }
+    
+    #testimonials{
+        margin-top:30px ;
     }
 
     #testimonials h2 {
         font-size: 20px;
         padding-left: 0px;
-        padding-top: 0px;
     }
 
     .circle {
@@ -909,11 +925,16 @@ footer {
         margin: 100px auto;
         padding-bottom: 25px;
         gap: 30px;
+        display: flex;
+        width:100%;
+        max-width:400px;
 
     }
 
     .card-services {
-        width: 520px;
+        width:100%;
+        max-width:400px;
+        height: 400px ;
         height: 550px;
 
 
@@ -948,34 +969,87 @@ footer {
         font-size: 20px;
     }
 
-    footer {
+    #bigYellow{
+        width: 100%;
+        height:200px;
+        display: flex;
+        width: 100%;
+        height:400px;
+    }
+
+    #bigYellow h2{
+        font-size: 20px;
+        justify-content: center;
         text-align: center;
+        margin:auto
+    }
+
+    .btn-sectionYell{
+        margin-top: 40px;
+        display: flex;
+    }
+    .btn-sectionYell button {
+        height: 30px;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    input {
+        padding-left: 10px;
+        border: none;
+        height: 30px;
+        width: 200px;
+    }
+    .mail-card {
+        display: none;
+    }
+    
+
+    footer {
+        display: flex;
+        text-align:right;
         margin: auto;
+        flex-direction:column;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 
     .footer-circle {
+        display:flex;
+        justify-content:center;
         text-align: left;
-        margin: auto;
-        width: 200px;
+        max-width:100px;
+        width: 100%;
+        margin-left: auto;
+        gap:100px;
+
+        
     }
 
     .footer-circle img {
         padding-top: 30px;
-        width: 100px;
+        width: 50px;
     }
 
     .footer-circle p {
         padding-top: 20px;
-        font-size: 13px;
+        font-size: 10px;
         color: rgb(66, 66, 66);
     }
 
     .footer-columns {
         margin-top: 70px;
+        margin:0 auto;    
+        text-align: center;    
     }
 
     .first-column p {
-        font-size: 13px;
+        font-size: 8px;
+        text-align: center;
+        color: blue;
+        justify-content: space-between;
+        
     }
 
 }

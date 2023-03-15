@@ -67,8 +67,6 @@ nav a {
     display: none;
 }
 
-
-
 .container-text h1 {
     margin: auto;
     font-size: 60px;
@@ -167,16 +165,19 @@ textarea {
 }
 
 footer {
-
     height: 300px;
     display: flex;
-    margin-top: 154px;
+    justify-content: center;
+    margin-top: 170px;
+    
+    
 }
 
 .footer-circle {
     margin: auto;
     display: block;
-    width: 300px;
+    width: 100%;
+    margin-left: 100px;
 }
 
 .footer-circle img {
@@ -193,8 +194,9 @@ footer {
 .footer-columns {
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    text-align: right;
+    margin:auto;
+    width:100%;
+    margin-right: 100px;
 }
 
 .first-column {
@@ -203,33 +205,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     color: rgb(66, 66, 66);
 }
 
 .first-column p {
     margin-top: 40px;
-}
-
-.footer-circle p {
-    padding-top: 20px;
-    font-size: 15px;
-    color: rgb(66, 66, 66);
-}
-
-.footer-columns {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
-
-.first-column {
-    width: 120px;
-    margin: auto 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: rgb(66, 66, 66);
 
 }
 
@@ -281,7 +261,27 @@ footer {
     .footer-circle {
         margin: auto;
         display: block;
-        width: 300px;
+        width: 100%;
+        margin-left: 100px;
+    }
+
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
+    }
+
+    .footer-circle p {
+        padding-top: 20px;
+        font-size: 15px;
+        color: rgb(66, 66, 66);
+    }
+
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        margin:auto;
+        width:100%;
+        margin-right: 90px;
     }
 
 }
@@ -329,24 +329,37 @@ footer {
 
     footer {
         text-align: center;
-        display: flex;
-        justify-content: center;
-        margin-top: 160px;
     }
 
-
     .footer-circle {
-        text-align: left;
         margin: auto;
-        width: 200px;
+        display: block;
+        width: 100%;
+        margin-left: 100px;
+    }
+
+    .footer-circle img {
+        padding-top: 30px;
+        width: 100px;
     }
 
     .footer-circle p {
+        padding-top: 20px;
         font-size: 13px;
+        color: rgb(66, 66, 66);
+    }
+
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        margin:auto;
+        width:100%;
+        margin-right: 90px;
     }
 
     .first-column p {
         font-size: 13px;
+        color: blue;
     }
 
 }
@@ -387,10 +400,9 @@ footer {
 
     #form-container {
 
-        width: 450px;
+        width: 100%;
         height: 660px;
         margin-top: 100px;
-        margin-left: 160px;
     }
 
     .container-text h1 {
@@ -403,7 +415,7 @@ footer {
     }
 
     .typeContact input {
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
     }
 
@@ -419,24 +431,50 @@ footer {
     }
 
     footer {
-        text-align: center;
         display: flex;
-        justify-content: center;
-        margin: 160px 100px;
+        text-align:right;
+        margin: auto;
+        margin-top: 200px;
+        flex-direction:column;
+        bottom: 0;
+
+        left: 0;
+        width: 100%;
     }
 
     .footer-circle {
+        display:flex;
+        justify-content:center;
         text-align: left;
-        margin: auto;
-        width: 200px;
+        max-width:100px;
+        width: 100%;
+        margin-left: auto;
+        gap:100px;
+    }
+
+    .footer-circle img {
+        padding-top: 30px;
+        width: 50px;
     }
 
     .footer-circle p {
-        font-size: 13px;
+        padding-top: 20px;
+        font-size: 10px;
+        color: rgb(66, 66, 66);
+    }
+
+    .footer-columns {
+        margin-top: 70px;
+        margin:0 auto;    
+        text-align: center;    
     }
 
     .first-column p {
-        font-size: 13px;
+        font-size: 8px;
+        text-align: center;
+        color: blue;
+        justify-content: space-between;
+        
     }
 
 }
