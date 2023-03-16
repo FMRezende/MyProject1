@@ -1,47 +1,50 @@
-const SERVER_URL = "http://localhost:3001/contacts";
-
-
 window.onload = () => {
-    console.log("ONLOAD");
+  console.log("ONLOAD");
 
-
-function _handleSubmitButton() {
-
+  function _handleSubmitButton() {
     const inputs = document.querySelectorAll("form input");
     const name = document.querySelector("#name").value;
     const email = document.querySelector("#email").value;
     const phone = document.querySelector("#phone").value;
     const message = document.querySelector("#comment").value;
 
+    if (name === "" || email === "" || phone === "") {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    const nameRegex = /[A-Za-zÑñáÉéÍíÓóÚÚ\s]+$/;
+    if (!nameRegex.test(name)) {
+      alert("Please enter with a correct name.");
+      return;
+    }
+
+    const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    const phoneRegex = /^\d{9}$/;
+    if (!phoneRegex.test(phone)) {
+      alert("Please enter a valid phone number with 9 digits.");
+      return;
+    }
+
     const newContact = {
-        name,
-        email,
-        phone,
-        message,
+      name,
+      email,
+      phone,
+      message,
     };
     console.log(newContact);
+  }
 
-    _saveContactData(newContact);
-}
-
-function _saveContactData(contact) {
-    fetch(SERVER_URL, {
-        method: "POST",
-        headers: {
-            "Accept" : "application/json",
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(contact)
-    })
-    .then(response => response.json())
-    .then(response => console.log(JSON.stringify(response)))
-}
-
-function _bindEvents() {
+  function _bindEvents() {
     const submitButton = document.querySelector(".submitButton");
 
     submitButton.addEventListener("click", _handleSubmitButton);
-}
+  }
 
-_bindEvents();
-}
+  _bindEvents();
+};

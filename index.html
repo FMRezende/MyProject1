@@ -15,9 +15,9 @@
         </a>
       </div>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
+        <a href="">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#servicesAll">Services</a>
       </nav>
 
       <div>
@@ -26,8 +26,8 @@
     </header>
     <nav class="navigation">
       <a href="#">Home</a>
-      <a href="#">Projects</a>
-      <a href="#">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#servicesAll">Services</a>
     </nav>
     <section id="principal">
       <div class="principalContainerText">
@@ -53,7 +53,7 @@
       <img class="google" src="assets/google-logo.svg" alt="google" />
       <img class="microsoft" src="assets/microsoft-logo.svg" alt="microsoft" />
     </section>
-    <section>
+    <section id = "projects">
       <h2>Recents<br />Projects</h2>
       <div id="structureProject" class="containerProject">
         <article class="box">
@@ -115,7 +115,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="servicesAll">
       <h2>Our Services</h2>
       <div id="services" class="services-container">
         <article class="card-services">
@@ -162,9 +162,16 @@
         <div class="mail-card">
           <img class="mail" src="assets/mail.svg" alt=" " />
         </div>
-        <form method="post" action="">
-        <input type="email" id="search-bar" placeholder="Enter yor email" required/>
-        <button type="submit">Subscribe</button>
+        <form id="firstPagemEmail" method="post" action="">
+          <input
+            type="email"
+            name="email"
+            id="search-bar"
+            placeholder="Enter yor email"
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[_a-z0-9]+)*(\.[a-z]{2,15})$"
+            required
+          />
+          <button type="submit">Subscribe</button>
         </form>
       </div>
     </section>
@@ -193,6 +200,5 @@
         </div>
       </div>
     </footer>
-    <script src="app.js"></script>
   </body>
 </html>

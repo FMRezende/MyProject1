@@ -29,7 +29,8 @@
       <a href="#">Projects</a>
       <a href="#">Services</a>
     </nav>
-            <form id="form-container" action="/some-action" method="post">
+
+            <form id="formContainer" action="/some-action" method="post">
                 <div class="container-text">
                     <h1>Contact Us</h1>
                 </div>
@@ -37,23 +38,23 @@
                 <div class="container-inputs">
                     <p>Full Name*</p>
                     <label for="name"></label>
-                    <input type="text" id="name" placeholder="Enter yor full name" required>
+                    <input type="text" name="name" id="name" placeholder="Enter yor full name" minlength ="3" maxlength="15" required>
                 </div>
                 <div class="typeContact">
                 <div>
                     <p>Email</p>
                     <label for="email"></label>
-                    <input type="email" id="email"  placeholder="Enter yor email address" required>
+                    <input type="email" name="email" id="email" placeholder="Enter yor email address" required >
                 </div>
                 <div>
                     <p>Phone</p>
                     <label for="phone"></label>
-                    <input type="number" id="phone" placeholder="Enter your phone number" required>
+                    <input type="number" name="phone" id="phone" placeholder="Enter your phone number" required>
                 </div>
             </div>
                     <p>Message</p>
                     <label for="comment"></label>
-                    <textarea type="text" id="comment" placeholder="Write your message here" required></textarea>                   
+                    <textarea type="text" name="comment" id="comment" placeholder="Write your message here" minlength ="3" maxlength="200" pattern="[A-Za-zÑñáÉéÍíÓóÚÚ\s]+$" required></textarea>                   
             </div>
             <button type="button" class="submitButton">Submit</button>
 

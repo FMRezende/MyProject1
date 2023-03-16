@@ -369,7 +369,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 70px;
-    
+
 }
 
 .footer-circle {
@@ -393,8 +393,8 @@ footer {
 .footer-columns {
     display: flex;
     justify-content: space-between;
-    margin:auto;
-    width:100%;
+    margin: auto;
+    width: 100%;
     margin-right: 100px;
 }
 
@@ -549,8 +549,8 @@ footer {
     .footer-columns {
         display: flex;
         justify-content: space-between;
-        margin:auto;
-        width:100%;
+        margin: auto;
+        width: 100%;
         margin-right: 90px;
     }
 }
@@ -729,8 +729,8 @@ footer {
     .footer-columns {
         display: flex;
         justify-content: space-between;
-        margin:auto;
-        width:100%;
+        margin: auto;
+        width: 100%;
         margin-right: 90px;
     }
 
@@ -821,21 +821,21 @@ footer {
 
     #client {
         justify-content: space-around;
-        width:100%;
+        width: 100%;
         margin-top: 20px;
     }
 
     #client img {
         height: 18px;
-       
+
     }
 
     section h2 {
         font-size: 40px;
         display: flex;
-        justify-content:center;
+        justify-content: center;
         margin-left: 30px;
-        
+
     }
 
 
@@ -843,13 +843,13 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%; 
+        width: 100%;
     }
 
     .box {
         display: flex;
-        width:100%;
-        max-width:400px;
+        width: 100%;
+        max-width: 400px;
         height: 690px;
         background-color: white;
         flex-direction: column;
@@ -873,7 +873,7 @@ footer {
     }
 
     #structureProject a {
-        
+
         padding-top: 35px;
         padding-bottom: 15px;
         font-size: 20px;
@@ -881,15 +881,16 @@ footer {
 
     .black-box {
         width: 100%;
-        height:400px;
-        
+        height: 400px;
+
     }
-    .faces-colun{
-        display: none;   
+
+    .faces-colun {
+        display: none;
     }
-    
-    #testimonials{
-        margin-top:30px ;
+
+    #testimonials {
+        margin-top: 30px;
     }
 
     #testimonials h2 {
@@ -926,15 +927,15 @@ footer {
         padding-bottom: 25px;
         gap: 30px;
         display: flex;
-        width:100%;
-        max-width:400px;
+        width: 100%;
+        max-width: 400px;
 
     }
 
     .card-services {
-        width:100%;
-        max-width:400px;
-        height: 400px ;
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
         height: 550px;
 
 
@@ -969,25 +970,26 @@ footer {
         font-size: 20px;
     }
 
-    #bigYellow{
+    #bigYellow {
         width: 100%;
-        height:200px;
+        height: 200px;
         display: flex;
         width: 100%;
-        height:400px;
+        height: 400px;
     }
 
-    #bigYellow h2{
+    #bigYellow h2 {
         font-size: 20px;
         justify-content: center;
         text-align: center;
-        margin:auto
+        margin: auto
     }
 
-    .btn-sectionYell{
+    .btn-sectionYell {
         margin-top: 40px;
         display: flex;
     }
+
     .btn-sectionYell button {
         height: 30px;
         width: 100px;
@@ -1000,31 +1002,32 @@ footer {
         height: 30px;
         width: 200px;
     }
+
     .mail-card {
         display: none;
     }
-    
+
 
     footer {
         display: flex;
-        text-align:right;
+        text-align: right;
         margin: auto;
-        flex-direction:column;
+        flex-direction: column;
         bottom: 0;
         left: 0;
         width: 100%;
     }
 
     .footer-circle {
-        display:flex;
-        justify-content:center;
+        display: flex;
+        justify-content: center;
         text-align: left;
-        max-width:100px;
+        max-width: 100px;
         width: 100%;
         margin-left: auto;
-        gap:100px;
+        gap: 100px;
 
-        
+
     }
 
     .footer-circle img {
@@ -1040,8 +1043,8 @@ footer {
 
     .footer-columns {
         margin-top: 70px;
-        margin:0 auto;    
-        text-align: center;    
+        margin: 0 auto;
+        text-align: center;
     }
 
     .first-column p {
@@ -1049,7 +1052,7 @@ footer {
         text-align: center;
         color: blue;
         justify-content: space-between;
-        
+
     }
 
 }
