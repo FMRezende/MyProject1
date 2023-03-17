@@ -44,6 +44,15 @@ nav a {
     color: rgb(66, 66, 66);
 }
 
+section h2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+
+}
+
+
 .link-btn {
     display: block;
     width: 90px;
@@ -63,83 +72,51 @@ nav a {
     display: none;
 }
 
-#principal {
+
+h1 {
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 23px;
+
+}
+
+.container-text {
+    line-height: 47px;
+    color: #292E47;
+    margin: 0;
+    margin-bottom: 23px;
     display: flex;
     justify-content: space-between;
+
 }
 
-.principalContainerText {
+.container-text p {
+    font-size: 24px;
+}
+
+.container-text p b {
+    color: rgb(87, 86, 86);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
 }
 
-#principal h1 {
-    padding: 5px 0;
-    font-size: 60px;
-    font-weight: bold;
-    padding-top: 05px;
+.date-project {
+    color: rgb(167, 162, 162);
+}
+
+.bigImgPage {
+    margin: auto;
+    width: 1100px;
+    height: 444px;
     display: flex;
+    justify-content: center;
 }
 
-#principal article {
+.pageText {
+    justify-content: center;
+    margin-top: 70px;
     font-size: 20px;
-    padding-bottom: 50px;
-    color: rgb(66, 66, 66);
-}
-
-#principal a {
-    padding: 15px 30px;
-    font-size: 15px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    width: 600px;
-    height: 600px;
-
-    background-image: url("assets/hero-image.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.hero img {
-    width: 270px;
-    height: 270px;
-    align-self: flex-start;
-}
-
-.hero img:last-of-type {
-    padding-top: 176px;
-    align-self: flex-end;
-}
-
-#blue-btn {
-    background-color: blue;
-    color: white;
-    margin-right: 15px;
-}
-
-#white-btn {
-    background-color: white;
-    color: rgb(66, 66, 66);
-}
-
-#client {
-    display: flex;
-    justify-content: space-between;
-}
-
-#client img {
-    height: 32px;
-    margin-top: 20px;
-    padding-left: 10px;
-    filter: grayscale(100%);
 }
 
 .containerProject {
@@ -149,23 +126,28 @@ nav a {
 }
 
 .box {
-    width: 340px;
-    height: 444px;
+    width: 330px;
+    height: 440px;
     background-color: white;
     box-shadow: 5px 5px 5px #888;
     box-sizing: border-box;
+
 }
 
 .box-img {
-    width: 340px;
+    width: 330px;
     height: 240px;
     top: 15px;
 }
 
+section h1 {
+    font-size: 60px;
+}
 
 #structureProject h4 {
     padding-left: 30px;
     font-size: 24px;
+
 }
 
 #structureProject p {
@@ -180,134 +162,6 @@ nav a {
     color: blue;
     text-decoration: none;
     padding-bottom: 100px;
-    font-size: 17px;
-}
-
-.black-box {
-    max-width: 1320px;
-    height: 622px;
-    background-color: #292E47;
-    display: flex;
-    justify-content: space-between;
-}
-
-.faces-colun {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#faces {
-    margin-left: 60px;
-    margin-top: 40px;
-    margin-right: 60px;
-}
-
-.smilles {
-    width: 150px;
-    height: 150px;
-}
-
-#testimonials {
-    text-align: center;
-    margin: auto;
-    margin-top: 90px;
-}
-
-#testimonials h2 {
-    color: white;
-    font-size: 40px;
-    margin-top: 10px;
-    text-align: center;
-    margin: auto;
-}
-
-.circle {
-    color: yellow;
-    margin: 100px auto;
-    font-size: 20px;
-}
-
-.profile {
-    width: 65px;
-    height: 65px;
-    border-radius: 80%;
-}
-
-.midle {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-}
-
-.midle h5 {
-    margin-left: 10px;
-    color: rgb(44, 133, 133);
-    margin-bottom: 2px;
-}
-
-.midle p {
-    color: white;
-    font-size: 10px;
-    margin-top: 5px;
-    margin-right: 25px;
-}
-
-section h2 {
-    font-size: 40px;
-    line-height: 47px;
-    color: #292E47;
-    margin: 0;
-    margin-bottom: 23px;
-}
-
-.services-container {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-
-}
-
-.card-services {
-    width: 340px;
-    height: 400px;
-    background-color: white;
-    box-shadow: 5px 5px 5px #888;
-    box-sizing: border-box;
-}
-
-.blueCircle {
-    background-color: #F4F6FC;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-#services img {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-#services h4 {
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    font-size: 24px;
-}
-
-#services p {
-    padding-left: 30px;
-    color: rgb(66, 66, 66);
-    padding-bottom: 30px;
-    font-size: 17px;
-}
-
-#services a {
-    padding-left: 30px;
-    color: blue;
-    text-decoration: none;
     font-size: 17px;
 }
 
@@ -369,7 +223,6 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 70px;
-
 }
 
 .footer-circle {
@@ -421,54 +274,47 @@ footer {
         display: none;
     }
 
-    #principal {
-        display: flex;
-        justify-content: center
-    }
-
-    .principalContainerText {
-        padding-top: 30px;
-    }
-
-    #principal h1 {
-        font-size: 40px;
-    }
-
-    #principal article {
-        font-size: 10px;
-    }
-
-    #principal a {
-        font-size: 10px;
-    }
-
-    .hero {
-        width: 450px;
-        height: 450px;
-    }
-
-    .hero img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .hero img:last-of-type {
-        padding-top: 120px;
-    }
-
-    #client {
-        justify-content: space-around;
-    }
-
-    #client img {
-        height: 28px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     section h2 {
         font-size: 30px;
         padding-left: 40px;
+    }
+
+    h1 {
+        padding: 0 100px;
+    }
+
+    .container-text {
+        padding: 0 100px;
+    }
+
+    .container-text p {
+        font-size: 24px;
+    }
+
+    .container-text p b {
+        color: rgb(87, 86, 86);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .date-project {
+        color: rgb(167, 162, 162);
+    }
+
+    .bigImgPage {
+        margin: auto;
+        width: 900px;
+        height: 444px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .pageText {
+        justify-content: center;
+        margin: 70px 100px;
+        font-size: 18px;
     }
 
     .containerProject {
@@ -503,30 +349,6 @@ footer {
         padding-left: 10px;
     }
 
-    .services-container {
-        justify-content: space-around;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .card-services {
-        width: 280px;
-        height: 360px;
-    }
-
-    #services img {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    #services h4 {
-        font-size: 20px;
-    }
-
-    #services p {
-        font-size: 15px;
-    }
-
 
     .footer-circle {
         margin: auto;
@@ -553,65 +375,58 @@ footer {
         width: 100%;
         margin-right: 90px;
     }
+
 }
+
 
 @media screen and (min-width: 777px) and (max-width:998px) {
     header {
         justify-content: space-around;
+
     }
 
     .navigation {
         display: none;
     }
 
-    #principal {
-        display: flex;
-        justify-content: center
-    }
-
-    .principalContainerText {
-        padding-top: 30px;
-    }
-
-    #principal h1 {
-        font-size: 30px;
-    }
-
-    #principal article {
-        font-size: 10px;
-    }
-
-    #principal a {
-        font-size: 10px;
-    }
-
-    .hero {
-        width: 400px;
-        height: 400px;
-    }
-
-    .hero img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .hero img:last-of-type {
-        padding-top: 130px;
-    }
-
-    #client {
-        justify-content: space-around;
-    }
-
-    #client img {
-        height: 28px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     section h2 {
         font-size: 25px;
         padding-left: 40px;
+    }
+
+    h1 {
+        padding: 0 70px;
+        font-size: 40px;
+    }
+
+    .container-text {
+        padding: 0 70px;
+    }
+
+    .container-text p {
+        font-size: 20px;
+    }
+
+    .container-text p b {
+        color: rgb(87, 86, 86);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .bigImgPage {
+        margin: auto;
+        width: 800px;
+        height: 444px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .pageText {
+        justify-content: center;
+        margin: 70px 70px;
+        font-size: 15px;
     }
 
     .containerProject {
@@ -644,64 +459,6 @@ footer {
 
     #structureProject a {
         padding-left: 10px;
-    }
-
-    .black-box {
-        height: 500px;
-    }
-
-    .smilles {
-        width: 150px;
-        height: 150px;
-    }
-
-    #testimonials h2 {
-        font-size: 25px;
-        padding-left: 0px;
-        padding-top: 0px;
-    }
-
-    .circle {
-        font-size: 10px;
-    }
-
-    .profile {
-        width: 50px;
-        height: 50px;
-    }
-
-    .midle h5 {
-        margin-top: 10px;
-    }
-
-    .services-container {
-        justify-content: space-around;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .card-services {
-        width: 220px;
-        height: 320px;
-    }
-
-    #services img {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    #services h4 {
-        font-size: 15px;
-        padding-left: 5px;
-    }
-
-    #services p {
-        font-size: 13px;
-        padding-left: 5px;
-    }
-
-    #services a {
-        padding-left: 5px;
     }
 
     footer {
@@ -740,6 +497,7 @@ footer {
 
 }
 
+
 @media screen and (max-width:777px) {
 
     header {
@@ -775,69 +533,43 @@ footer {
         color: rgb(66, 66, 66);
     }
 
-    #principal {
-        display: flex;
-        flex-direction: column;
-        margin-top: 25px;
-
-    }
-
-    .principalContainerText {
-        padding-top: 30px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-
-    #principal h1 {
-        font-size: 50px;
-        justify-content: center;
-
-    }
-
-    #principal article {
-        font-size: 15px;
-    }
-
-    #principal a {
-        font-size: 10px;
-    }
-
-    .hero {
-        width: 400px;
-        height: 400px;
-        margin-top: 50px;
-        margin: 100px auto;
-    }
-
-    .hero img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .hero img:last-of-type {
-        padding-top: 130px;
-    }
-
-    #client {
-        justify-content: space-around;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    #client img {
-        height: 18px;
-
-    }
-
     section h2 {
         font-size: 40px;
         display: flex;
         justify-content: center;
         margin-left: 30px;
-
     }
 
+    h1 {
+        font-size: 40px;
+    }
+
+
+    .container-text p {
+        font-size: 15px;
+    }
+
+    .container-text p b {
+        color: rgb(87, 86, 86);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .bigImgPage {
+        width: 100%;
+        height: 400px;
+    }
+
+    .pageText {
+        justify-content: center;
+        margin: 70px 10px;
+        font-size: 15px;
+    }
+
+    .container-text {
+        display: block;
+    }
 
     .containerProject {
         display: flex;
@@ -854,7 +586,6 @@ footer {
         background-color: white;
         flex-direction: column;
         margin-top: 30px;
-
     }
 
     .box-img {
@@ -873,108 +604,14 @@ footer {
     }
 
     #structureProject a {
-
         padding-top: 35px;
         padding-bottom: 15px;
         font-size: 20px;
     }
 
-    .black-box {
-        width: 100%;
-        height: 400px;
-
-    }
-
-    .faces-colun {
-        display: none;
-    }
-
-    #testimonials {
-        margin-top: 30px;
-    }
-
-    #testimonials h2 {
-        font-size: 20px;
-        padding-left: 0px;
-    }
-
-    .circle {
-        font-size: 10px;
-    }
-
-    .profile {
-        width: 30px;
-        height: 30px;
-    }
-
-    .midle h5 {
-        margin-top: 5px;
-        font-size: 10px;
-    }
-
-    .midle p {
-        font-size: 8px;
-        padding-left: 10px;
-    }
-
-    .services-container {
-        display: block;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 100px auto;
-        padding-bottom: 25px;
-        gap: 30px;
-        display: flex;
-        width: 100%;
-        max-width: 400px;
-
-    }
-
-    .card-services {
-        width: 100%;
-        max-width: 400px;
-        height: 400px;
-        height: 550px;
-
-
-    }
-
-    #services img {
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 100px;
-    }
-
-    #services .blueCircle {
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 150px;
-        height: 150px;
-    }
-
-    #services h4 {
-        font-size: 30px;
-        padding-left: 10px;
-        padding-top: 75px;
-    }
-
-    #services p {
-        font-size: 20px;
-        padding-left: 10px;
-    }
-
-    #services a {
-        padding-left: 10px;
-        font-size: 20px;
-    }
-
     #bigYellow {
         width: 100%;
-        height: 200px;
         display: flex;
-        width: 100%;
         height: 400px;
     }
 
@@ -1054,5 +691,4 @@ footer {
         justify-content: space-between;
 
     }
-
 }

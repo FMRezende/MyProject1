@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mid Project</title>
+    <link type="text/css" rel="stylesheet" href="./contactPage.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="#">
+          <img src="/assets/circle.svg" alt="circle" />
+        </a>
+      </div>
+      <nav>
+          <a href="/index.html">Home</a>
+          <a href="#">Projects</a>
+          <a href="#">Services</a>
+      </nav>
+      
+      <div>
+        <a href="#" class="link-btn">Contact us</a>
+      </div>
+    </header>
+    <nav class="navigation">
+      <a href="/index.html">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Services</a>
+    </nav>
+
+            <form id="formContainer" action="/some-action" method="post">
+                <div class="container-text">
+                    <h1>Contact Us</h1>
+                </div>
+                
+                <div class="container-inputs">
+                    <p>Full Name*</p>
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Enter yor full name" minlength ="3" maxlength="15" required>
+                </div>
+                <div class="typeContact">
+                <div>
+                    <p>Email</p>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Enter yor email address" required >
+                </div>
+                <div>
+                    <p>Phone</p>
+                    <label for="phone"></label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+                    <p>Message</p>
+                    <label for="comment"></label>
+                    <textarea type="text" name="comment" id="comment" placeholder="Write your message here" minlength ="3" maxlength="200" pattern="[A-Za-zÑñáÉéÍíÓóÚÚ\s]+$" required></textarea>                   
+            </div>
+            <button type="button" class="submitButton">Submit</button>
+
+        </form>
+    
+    <footer >
+      <div class="footer-circle">
+          <a href="#">
+            <img src="/assets/circle.svg" alt="circle" />
+          </a>
+          <p>
+            2972 Westheimer Rd. Santa Ana,<br />
+            Illinois 85486
+          </p>        
+      </div>
+      <div class="footer-columns">
+        <div class="first-column">
+          <p>Team</p>
+          <p>Press</p>
+        </div>
+        <div class="first-column">
+          <p>Services</p>
+          <p>Projects</p>
+        </div>
+        <div class="first-column">
+          <p>About Us</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>
