@@ -8,7 +8,7 @@ window.onload = () => {
     const phone = document.querySelector("#phone").value;
     const message = document.querySelector("#comment").value;
 
-    if (name === "" || email === "" || phone === "") {
+    if (name === "" || name === "IronHack" || email === "" || phone === "") {
       alert("Please fill in all required fields.");
       return;
     }
