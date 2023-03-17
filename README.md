@@ -1,17 +1,12 @@
 ### Hi, I'm Felipe
 
 <h1 align= "center">
-<img src="assets/circle.svg"  />
+<img src="assets/SharedScreenshot.jpg"/>
 </h1>
-<h1 align= "center">
-<img src="assets/hero-image.png" />
-</h1>
+
 
 ## About
 
-<h1 align= "center">
-<img src ="image.png">
-</h1>
 
 **MyProject1** It's a project of a homepage with a form using the post method in a db.json database.
 
